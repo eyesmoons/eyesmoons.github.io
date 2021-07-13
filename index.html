@@ -1,327 +1,29 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"eyesmoons.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
-
-  <meta name="description" content="工作问题记录">
-<meta property="og:type" content="website">
-<meta property="og:title" content="毛毛小妖的博客">
-<meta property="og:url" content="https://eyesmoons.github.io/index.html">
-<meta property="og:site_name" content="毛毛小妖的博客">
-<meta property="og:description" content="工作问题记录">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="casey">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="https://eyesmoons.github.io/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-CN'
-  };
-</script>
-
-  <title>毛毛小妖的博客</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">毛毛小妖的博客</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-fw fa-fa fa-home"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-fa fa-archive"></i>归档</a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
-        </a>
-      </li>
-  </ul>
-</nav>
-
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="搜索..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
-            
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://eyesmoons.github.io/2021/07/12/sceond-post/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="casey">
-      <meta itemprop="description" content="工作问题记录">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="毛毛小妖的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/07/12/sceond-post/" class="post-title-link" itemprop="url">“Fortify代码扫描解决方案”</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-07-12 13:45:02 / 修改时间：13:50:43" itemprop="dateCreated datePublished" datetime="2021-07-12T13:45:02+08:00">2021-07-12</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>23k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>21 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<h2>1、Log Forging漏洞：</h2>
-</blockquote>
-
-<p>1.数据从一个不可信赖的数据源进入应用程序。&nbsp;在这种情况下，数据经由getParameter()到后台。&nbsp;<br />
-2. 数据写入到应用程序或系统日志文件中。&nbsp;这种情况下，数据通过info()&nbsp;记录下来。为了便于以后的审阅、统计数据收集或调试，应用程序通常使用日志文件来储存事件或事务的历史记录。根据应用程序自身的特性，审阅日志文件可在必要时手动执行，也可以自动执行，即利用工具自动挑选日志中的重要事件或带有某种倾向性的信息。如果攻击者可以向随后会被逐字记录到日志文件的应用程序提供数据，则可能会妨碍或误导日志文件的解读。最理想的情况是，攻击者可能通过向应用程序提供包括适当字符的输入，在日志文件中插入错误的条目。如果日志文件是自动处理的，那么攻击者可以破坏文件格式或注入意外的字符，从而使文件无法使用。更阴险的攻击可能会导致日志文件中的统计信息发生偏差。通过伪造或其他方式，受到破坏的日志文件可用于掩护攻击者的跟踪轨迹，甚至还可以牵连第三方来执行恶意行为。最糟糕的情况是，攻击者可能向日志文件注入代码或者其他命令，利用日志处理实用程序中的漏洞。<br />
-例 1：&nbsp;下列 Web 应用程序代码会尝试从一个请求对象中读取整数值。如果数值未被解析为整数，输入就会被记录到日志中，附带一条提示相关情况的错误消息。&nbsp;</p>
-
-<pre>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.0"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png"><link rel="mask-icon" href="/images/logo.svg" color="#222"><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css"><script id="hexo-configurations">var NexT=window.NexT||{},CONFIG={hostname:"eyesmoons.github.io",root:"/",scheme:"Muse",version:"7.8.0",exturl:!1,sidebar:{position:"right",display:"post",padding:18,offset:12,onmobile:!1},copycode:{enable:!1,show_result:!1,style:null},back2top:{enable:!0,sidebar:!1,scrollpercent:!1},bookmark:{enable:!1,color:"#222",save:"auto"},fancybox:!0,mediumzoom:!1,lazyload:!1,pangu:!1,comments:{style:"tabs",active:null,storage:!0,lazyload:!1,nav:null},algolia:{hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}},localsearch:{enable:!0,trigger:"auto",top_n_per_article:1,unescape:!1,preload:!1},motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},path:"search.xml"}</script><meta name="description" content="工作问题记录"><meta property="og:type" content="website"><meta property="og:title" content="毛毛小妖的博客"><meta property="og:url" content="https://eyesmoons.github.io/index.html"><meta property="og:site_name" content="毛毛小妖的博客"><meta property="og:description" content="工作问题记录"><meta property="og:locale" content="zh_CN"><meta property="article:author" content="casey"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://eyesmoons.github.io/"><script id="page-configurations">CONFIG.page={sidebar:"",isHome:!0,isPost:!1,lang:"zh-CN"}</script><title>毛毛小妖的博客</title><noscript><style>.sidebar-inner,.use-motion .brand,.use-motion .collection-header,.use-motion .comments,.use-motion .menu-item,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{opacity:initial}.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.use-motion .logo-line-before i{left:initial}.use-motion .logo-line-after i{right:initial}</style></noscript></head><body itemscope itemtype="http://schema.org/WebPage"><div class="container use-motion"><div class="headband"></div><header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-container"><div class="site-nav-toggle"><div class="toggle" aria-label="切换导航栏"><span class="toggle-line toggle-line-first"></span> <span class="toggle-line toggle-line-middle"></span> <span class="toggle-line toggle-line-last"></span></div></div><div class="site-meta"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span><h1 class="site-title">毛毛小妖的博客</h1><span class="logo-line-after"><i></i></span></a></div><div class="site-nav-right"><div class="toggle popup-trigger"><i class="fa fa-search fa-fw fa-lg"></i></div></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-fw fa-fa fa-home"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-fw fa-fa fa-archive"></i>归档</a></li><li class="menu-item menu-item-search"><a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索</a></li></ul></nav><div class="search-pop-overlay"><div class="popup search-popup"><div class="search-header"><span class="search-icon"><i class="fa fa-search"></i></span><div class="search-input-container"><input autocomplete="off" autocapitalize="off" placeholder="搜索..." spellcheck="false" type="search" class="search-input"></div><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span></div><div id="search-result"><div id="no-result"><i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i></div></div></div></div></div></header><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span>0%</span></div><main class="main"><div class="main-inner"><div class="content-wrap"><div class="content index posts-expand"><article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://eyesmoons.github.io/2021/07/12/sceond-post/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/avatar.gif"><meta itemprop="name" content="casey"><meta itemprop="description" content="工作问题记录"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="毛毛小妖的博客"></span><header class="post-header"><h2 class="post-title" itemprop="name headline"><a href="/2021/07/12/sceond-post/" class="post-title-link" itemprop="url">“Fortify代码扫描解决方案”</a></h2><div class="post-meta"><span class="post-meta-item"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建时间：2021-07-12 13:45:02 / 修改时间：13:50:43" itemprop="dateCreated datePublished" datetime="2021-07-12T13:45:02+08:00">2021-07-12</time></span><br><span class="post-meta-item" title="本文字数"><span class="post-meta-item-icon"><i class="fa fa-file-word-o"></i> </span><span class="post-meta-item-text">本文字数：</span> <span>23k</span> </span><span class="post-meta-item" title="阅读时长"><span class="post-meta-item-icon"><i class="fa fa-clock-o"></i> </span><span class="post-meta-item-text">阅读时长 &asymp;</span> <span>21 分钟</span></span></div></header><div class="post-body" itemprop="articleBody"><blockquote><h2>1、Log Forging漏洞：</h2></blockquote><p>1.数据从一个不可信赖的数据源进入应用程序。&nbsp;在这种情况下，数据经由getParameter()到后台。&nbsp;<br>2. 数据写入到应用程序或系统日志文件中。&nbsp;这种情况下，数据通过info()&nbsp;记录下来。为了便于以后的审阅、统计数据收集或调试，应用程序通常使用日志文件来储存事件或事务的历史记录。根据应用程序自身的特性，审阅日志文件可在必要时手动执行，也可以自动执行，即利用工具自动挑选日志中的重要事件或带有某种倾向性的信息。如果攻击者可以向随后会被逐字记录到日志文件的应用程序提供数据，则可能会妨碍或误导日志文件的解读。最理想的情况是，攻击者可能通过向应用程序提供包括适当字符的输入，在日志文件中插入错误的条目。如果日志文件是自动处理的，那么攻击者可以破坏文件格式或注入意外的字符，从而使文件无法使用。更阴险的攻击可能会导致日志文件中的统计信息发生偏差。通过伪造或其他方式，受到破坏的日志文件可用于掩护攻击者的跟踪轨迹，甚至还可以牵连第三方来执行恶意行为。最糟糕的情况是，攻击者可能向日志文件注入代码或者其他命令，利用日志处理实用程序中的漏洞。<br>例 1：&nbsp;下列 Web 应用程序代码会尝试从一个请求对象中读取整数值。如果数值未被解析为整数，输入就会被记录到日志中，附带一条提示相关情况的错误消息。&nbsp;</p><pre>
 <code class="language-java">String val = request.getParameter("val");
 try &#123;
     int value = Integer.parseInt(val);
 &#125; catch (NumberFormatException nfe) &#123;
     log.info("Failed to parse val = " + val);
-&#125;</code></pre>
-
-<p>如果用户为&ldquo;val&rdquo;提交字符串&ldquo;twenty-one&rdquo;，则日志中会记录以下条目：</p>
-
-<pre>
-<code>INFO: Failed to parse val=twenty-one</code></pre>
-
-<p>然而，如果攻击者提交字符串</p>
-
-<pre>
-<code>“twenty-one%0a%0aINFO:+User+logged+out%3dbadguy”，</code></pre>
-
-<p>则日志中会记录以下条目：</p>
-
-<pre>
+&#125;</code></pre><p>如果用户为&ldquo;val&rdquo;提交字符串&ldquo;twenty-one&rdquo;，则日志中会记录以下条目：</p><pre>
+<code>INFO: Failed to parse val=twenty-one</code></pre><p>然而，如果攻击者提交字符串</p><pre>
+<code>“twenty-one%0a%0aINFO:+User+logged+out%3dbadguy”，</code></pre><p>则日志中会记录以下条目：</p><pre>
 <code>INFO: Failed to parse val=twenty-one
-INFO: User logged out=badguy</code></pre>
-
-<p>显然，攻击者可以使用同样的机制插入任意日志条目。<br />
-有些人认为在移动世界中，典型的 Web 应用程序漏洞（如 Log Forging）是无意义的 -- 为什么用户要攻击自己？但是，谨记移动平台的本质是从各种来源下载并在相同设备上运行的应用程序。恶意软件在银行应用程序附近运行的可能性很高，它们会强制扩展移动应用程序的攻击面（包括跨进程通信）。</p>
-
-<p>例 2：以下代码将例 1 改编为适用于 Android 平台。</p>
-
-<pre>
+INFO: User logged out=badguy</code></pre><p>显然，攻击者可以使用同样的机制插入任意日志条目。<br>有些人认为在移动世界中，典型的 Web 应用程序漏洞（如 Log Forging）是无意义的 -- 为什么用户要攻击自己？但是，谨记移动平台的本质是从各种来源下载并在相同设备上运行的应用程序。恶意软件在银行应用程序附近运行的可能性很高，它们会强制扩展移动应用程序的攻击面（包括跨进程通信）。</p><p>例 2：以下代码将例 1 改编为适用于 Android 平台。</p><pre>
 <code>String val = this.getIntent().getExtras().getString("val");
 try &#123;
 int value = Integer.parseInt();
 &#125;
 catch (NumberFormatException nfe) &#123;
 Log.e(TAG, "Failed to parse val = " + val);
-&#125;</code></pre>
-
-<p>使用间接方法防止 Log Forging 攻击：创建一组与不同事件一一对应的合法日志条目，这些条目必须记录在日志中，并且仅记录该组条目。要捕获动态内容（如用户注销系统），请务必使用由服务器控制的数值，而非由用户提供的数据。这就确保了日志条目中绝不会直接使用由用户提供的输入。&nbsp;<br />
-可以按以下方式将例 1 重写为与NumberFormatException&nbsp;对应的预定义日志条目：</p>
-
-<pre>
+&#125;</code></pre><p>使用间接方法防止 Log Forging 攻击：创建一组与不同事件一一对应的合法日志条目，这些条目必须记录在日志中，并且仅记录该组条目。要捕获动态内容（如用户注销系统），请务必使用由服务器控制的数值，而非由用户提供的数据。这就确保了日志条目中绝不会直接使用由用户提供的输入。&nbsp;<br>可以按以下方式将例 1 重写为与NumberFormatException&nbsp;对应的预定义日志条目：</p><pre>
 <code>public static final String NFE = "Failed to parse val. The input is required to be an integer value."
-String val = request.getParameter("val"); try &#123; int value = Integer.parseInt(val); &#125; catch (NumberFormatException nfe) &#123; log.info(NFE); &#125;</code></pre>
-
-<pre>
-下面是 Android 的等同内容：</pre>
-
-<pre>
+String val = request.getParameter("val"); try &#123; int value = Integer.parseInt(val); &#125; catch (NumberFormatException nfe) &#123; log.info(NFE); &#125;</code></pre><pre>
+下面是 Android 的等同内容：</pre><pre>
 <code>public static final String NFE = "Failed to parse val. The input is required to be an integer value."
-String val = this.getIntent().getExtras().getString("val"); try &#123; int value = Integer.parseInt(); &#125; catch (NumberFormatException nfe) &#123; Log.e(TAG, NFE); &#125;</code></pre>
-
-<p>在某些情况下，这个方法有些不切实际，因为这样一组合法的日志条目实在太大或是太复杂了。这种情况下，开发者往往又会退而采用黑名单方法。在输入之前，黑名单会有选择地拒绝或避免潜在的危险字符。然而，不安全字符列表很快就会不完善或过时。更好的方法是创建一份白名单，允许其中的字符出现在日志条目中，并且只接受完全由这些经认可的字符组成的输入。在大多数 Log Forging 攻击中，最关键的字符是&ldquo;\n&rdquo;（换行符），该字符决不能出现在日志条目白名单中。<br />
-<br />
-<strong>Tips:</strong><br />
-1. 许多日志功能只是为了在开发和测试过程中调试程序而创建的。根据我们的经验，当生产的某一阶段，会随机或出于某一目的进行调试。不要仅仅因为程序员说&ldquo;我没有计划在生产中启动调试功能&rdquo;，就容忍 Log Forging 漏洞。<br />
-<br />
-2. 许多现代 Web 框架都提供对用户输入执行验证的机制。其中包括 Struts 和 Spring MVC。为了突出显示未经验证的输入源，HPE Security Fortify 安全编码规则包会降低 HPE Security Fortify Static Code Analyzer（HPE Security Fortify 静态代码分析器）报告的问题被利用的可能性，并在使用框架验证机制时提供相应的依据，以动态重新调整问题优先级。我们将这种功能称之为上下文敏感排序。为了进一步帮助 HPE Security Fortify 用户执行审计过程，HPE Security Fortify 软件安全研究团队提供了数据验证项目模板，该模板会根据应用于输入源的验证机制，将问题分组到多个文件夹中。</p>
-
-<blockquote>
-<h2>2、Null Dereference</h2>
-</blockquote>
-
-<p>1、当违反程序员的一个或多个假设时，通常会出现 null 指针异常。如果程序明确将对象设置为&nbsp;null，但稍后却间接引用该对象，则将出现 dereference-after-store 错误。此错误通常是因为程序员在声明变量时将变量初始化为&nbsp;null。在这种情况下，在第&nbsp;443&nbsp;行间接引用该变量时，变量有可能为&nbsp;null，从而引起 null 指针异常。&nbsp;大部分空指针问题只会引起一般的软件可靠性问题，但如果攻击者能够故意触发空指针间接引用，攻击者就有可能利用引发的异常绕过安全逻辑，或致使应用程序泄漏调试信息，这些信息对于规划随后的攻击十分有用。<br />
-<strong>示例：</strong>在下列代码中，程序员将变量foo&nbsp;明确设置为&nbsp;null。稍后，程序员间接引用&nbsp;foo，而未检查对象是否为 null 值。</p>
-
-<pre>
+String val = this.getIntent().getExtras().getString("val"); try &#123; int value = Integer.parseInt(); &#125; catch (NumberFormatException nfe) &#123; Log.e(TAG, NFE); &#125;</code></pre><p>在某些情况下，这个方法有些不切实际，因为这样一组合法的日志条目实在太大或是太复杂了。这种情况下，开发者往往又会退而采用黑名单方法。在输入之前，黑名单会有选择地拒绝或避免潜在的危险字符。然而，不安全字符列表很快就会不完善或过时。更好的方法是创建一份白名单，允许其中的字符出现在日志条目中，并且只接受完全由这些经认可的字符组成的输入。在大多数 Log Forging 攻击中，最关键的字符是&ldquo;\n&rdquo;（换行符），该字符决不能出现在日志条目白名单中。<br><br><strong>Tips:</strong><br>1. 许多日志功能只是为了在开发和测试过程中调试程序而创建的。根据我们的经验，当生产的某一阶段，会随机或出于某一目的进行调试。不要仅仅因为程序员说&ldquo;我没有计划在生产中启动调试功能&rdquo;，就容忍 Log Forging 漏洞。<br><br>2. 许多现代 Web 框架都提供对用户输入执行验证的机制。其中包括 Struts 和 Spring MVC。为了突出显示未经验证的输入源，HPE Security Fortify 安全编码规则包会降低 HPE Security Fortify Static Code Analyzer（HPE Security Fortify 静态代码分析器）报告的问题被利用的可能性，并在使用框架验证机制时提供相应的依据，以动态重新调整问题优先级。我们将这种功能称之为上下文敏感排序。为了进一步帮助 HPE Security Fortify 用户执行审计过程，HPE Security Fortify 软件安全研究团队提供了数据验证项目模板，该模板会根据应用于输入源的验证机制，将问题分组到多个文件夹中。</p><blockquote><h2>2、Null Dereference</h2></blockquote><p>1、当违反程序员的一个或多个假设时，通常会出现 null 指针异常。如果程序明确将对象设置为&nbsp;null，但稍后却间接引用该对象，则将出现 dereference-after-store 错误。此错误通常是因为程序员在声明变量时将变量初始化为&nbsp;null。在这种情况下，在第&nbsp;443&nbsp;行间接引用该变量时，变量有可能为&nbsp;null，从而引起 null 指针异常。&nbsp;大部分空指针问题只会引起一般的软件可靠性问题，但如果攻击者能够故意触发空指针间接引用，攻击者就有可能利用引发的异常绕过安全逻辑，或致使应用程序泄漏调试信息，这些信息对于规划随后的攻击十分有用。<br><strong>示例：</strong>在下列代码中，程序员将变量foo&nbsp;明确设置为&nbsp;null。稍后，程序员间接引用&nbsp;foo，而未检查对象是否为 null 值。</p><pre>
 <code>Foo foo = null;...
 foo.setBar(val);
-&#125;</code></pre>
-
-<p>在间接引用可能为 null 值的对象之前，请务必仔细检查。如有可能，在处理资源的代码周围的包装器中纳入 null 检查，确保在所有情况下均会执行 null 检查，并最大限度地减少出错的地方。</p>
-
-<blockquote>
-<h2>3、Unreleased Resource: Streams</h2>
-</blockquote>
-
-<p>程序可能无法成功释放某一项系统资源。这种情况下，尽管程序没有释放RuleUtils.java&nbsp;文件第&nbsp;91&nbsp;行所分配的资源，但执行这一操作程序路径依然存在。资源泄露至少有两种常见的原因：</p>
-
-<p>－错误状况及其他异常情况。<br />
-－未明确程序的哪一部份负责释放资源。<br />
-大部分 Unreleased Resource 问题只会导致一般的软件可靠性问题，但如果攻击者能够故意触发资源泄漏，该攻击者就有可能通过耗尽资源池的方式发起 denial of service 攻击。<br />
-<strong>示例：</strong>下面的方法绝不会关闭它所打开的文件句柄。FileInputStream&nbsp;中的&nbsp;finalize()&nbsp;方法最终会调用close()，但是不能确定何时会调用finalize()&nbsp;方法。在繁忙的环境中，这会导致 JVM 用尽它所有的文件句柄。</p>
-
-<pre>
+&#125;</code></pre><p>在间接引用可能为 null 值的对象之前，请务必仔细检查。如有可能，在处理资源的代码周围的包装器中纳入 null 检查，确保在所有情况下均会执行 null 检查，并最大限度地减少出错的地方。</p><blockquote><h2>3、Unreleased Resource: Streams</h2></blockquote><p>程序可能无法成功释放某一项系统资源。这种情况下，尽管程序没有释放RuleUtils.java&nbsp;文件第&nbsp;91&nbsp;行所分配的资源，但执行这一操作程序路径依然存在。资源泄露至少有两种常见的原因：</p><p>－错误状况及其他异常情况。<br>－未明确程序的哪一部份负责释放资源。<br>大部分 Unreleased Resource 问题只会导致一般的软件可靠性问题，但如果攻击者能够故意触发资源泄漏，该攻击者就有可能通过耗尽资源池的方式发起 denial of service 攻击。<br><strong>示例：</strong>下面的方法绝不会关闭它所打开的文件句柄。FileInputStream&nbsp;中的&nbsp;finalize()&nbsp;方法最终会调用close()，但是不能确定何时会调用finalize()&nbsp;方法。在繁忙的环境中，这会导致 JVM 用尽它所有的文件句柄。</p><pre>
 <code>private void processFile(String fName) throws FileNotFoundException, IOException &#123;
 　　FileInputStream fis = new FileInputStream(fName);
 　　int sz;
@@ -329,14 +31,7 @@ foo.setBar(val);
 　　while ((sz = fis.read(byteArray)) != -1) &#123;
 　　　　processBytes(byteArray, sz);
 　　&#125;
-&#125;</code></pre>
-
-<p>1. 请不要依赖&nbsp;finalize()&nbsp;回收资源。为了使对象的&nbsp;finalize()&nbsp;方法能被调用，垃圾收集器必须确认对象符合垃圾回收的条件。但是垃圾收集器只有在 JVM 内存过小时才会使用。因此，无法保证何时能够调用该对象的&nbsp;finalize()&nbsp;方法。垃圾收集器最终运行时，可能出现这样的情况，即在短时间内回收大量的资源，这种情况会导致&ldquo;突发&rdquo;性能，并降低总体系统通过量。随着系统负载的增加，这种影响会越来越明显。<br />
-<br />
-最后，如果某一资源回收操作被挂起（例如该操作需要通过网络访问数据库），那么执行&nbsp;finalize()&nbsp;方法的线程也将被挂起。<br />
-2. 在&nbsp;finally&nbsp;代码段中释放资源。示例中的代码可按以下方式改写：</p>
-
-<pre>
+&#125;</code></pre><p>1. 请不要依赖&nbsp;finalize()&nbsp;回收资源。为了使对象的&nbsp;finalize()&nbsp;方法能被调用，垃圾收集器必须确认对象符合垃圾回收的条件。但是垃圾收集器只有在 JVM 内存过小时才会使用。因此，无法保证何时能够调用该对象的&nbsp;finalize()&nbsp;方法。垃圾收集器最终运行时，可能出现这样的情况，即在短时间内回收大量的资源，这种情况会导致&ldquo;突发&rdquo;性能，并降低总体系统通过量。随着系统负载的增加，这种影响会越来越明显。<br><br>最后，如果某一资源回收操作被挂起（例如该操作需要通过网络访问数据库），那么执行&nbsp;finalize()&nbsp;方法的线程也将被挂起。<br>2. 在&nbsp;finally&nbsp;代码段中释放资源。示例中的代码可按以下方式改写：</p><pre>
 <code>public void processFile(String fName) throws FileNotFoundException, IOException &#123;
     FileInputStream fis;
     try &#123;
@@ -361,51 +56,15 @@ public static void safeClose(FileInputStream fis) &#123;
         log(e);
     &#125;
     &#125;
-&#125;</code></pre>
-
-<p>以上方案使用了一个助手函数，用以记录在尝试关闭流时可能发生的异常。该助手函数大约会在需要关闭流时重新使用。<br />
-同样，processFile&nbsp;方法不会将&nbsp;fis&nbsp;对象初始化为 null。而是进行检查，以确保调用&nbsp;safeClose()&nbsp;之前，fis&nbsp;不是null。如果没有检查&nbsp;null，Java 编译器会报告&nbsp;fis&nbsp;可能没有进行初始化。编译器做出这一判断源于 Java 可以检测未初始化的变量。如果用一种更加复杂的方法将&nbsp;fis&nbsp;初始化为null，那么编译器就无法检测&nbsp;fis&nbsp;未经初始化便使用的情况。</p>
-
-<blockquote>
-<h2>4、Portability Flaw: File Separator</h2>
-</blockquote>
-
-<p>不同的操作系统使用不同的字符作为文件分隔符。例如，Microsoft Windows 系统使用&ldquo;\&rdquo;，而 UNIX 系统则使用&ldquo;/&rdquo;。应用程序需要在不同的平台上运行时，使用硬编码文件分隔符会导致应用程序逻辑执行错误，并有可能导致 denial of service。在这种情况下，在&nbsp;FileUtil.java&nbsp;中第&nbsp;254行的&nbsp;File()&nbsp;调用中使用了硬编码文件分隔符。<br />
-<strong>例</strong><strong>&nbsp;1</strong><strong>：</strong>以下代码使用硬编码文件分隔符来打开文件：</p>
-
-<pre>
-<code>File file = new File(directoryName + "\\" + fileName);</code></pre>
-
-<p>为编写可移植代码，不应使用硬编码文件分隔符，而应使用语言库提供的独立于平台的 API。<br />
-<strong>例</strong><strong>&nbsp;2</strong><strong>：</strong>下列代码执行与例 1 相同的功能，但使用独立于平台的 API 来指定文件分隔符：</p>
-
-<pre>
-<code>File file = new File(directoryName + File.separator + fileName);</code></pre>
-
-<p>&nbsp;</p>
-
-<blockquote>
-<h2>5、Portability Flaw: Locale Dependent Comparison</h2>
-</blockquote>
-
-<p>对可能与区域设置相关的数据进行比较时，应指定相应的区域设置。<br />
-<strong>示例</strong><strong>&nbsp;1</strong><strong>：</strong>以下示例尝试执行验证，以确定用户输入是否包含&nbsp;&lt;script&gt;&nbsp;标签。</p>
-
-<pre>
+&#125;</code></pre><p>以上方案使用了一个助手函数，用以记录在尝试关闭流时可能发生的异常。该助手函数大约会在需要关闭流时重新使用。<br>同样，processFile&nbsp;方法不会将&nbsp;fis&nbsp;对象初始化为 null。而是进行检查，以确保调用&nbsp;safeClose()&nbsp;之前，fis&nbsp;不是null。如果没有检查&nbsp;null，Java 编译器会报告&nbsp;fis&nbsp;可能没有进行初始化。编译器做出这一判断源于 Java 可以检测未初始化的变量。如果用一种更加复杂的方法将&nbsp;fis&nbsp;初始化为null，那么编译器就无法检测&nbsp;fis&nbsp;未经初始化便使用的情况。</p><blockquote><h2>4、Portability Flaw: File Separator</h2></blockquote><p>不同的操作系统使用不同的字符作为文件分隔符。例如，Microsoft Windows 系统使用&ldquo;\&rdquo;，而 UNIX 系统则使用&ldquo;/&rdquo;。应用程序需要在不同的平台上运行时，使用硬编码文件分隔符会导致应用程序逻辑执行错误，并有可能导致 denial of service。在这种情况下，在&nbsp;FileUtil.java&nbsp;中第&nbsp;254行的&nbsp;File()&nbsp;调用中使用了硬编码文件分隔符。<br><strong>例</strong><strong>&nbsp;1</strong><strong>：</strong>以下代码使用硬编码文件分隔符来打开文件：</p><pre>
+<code>File file = new File(directoryName + "\\" + fileName);</code></pre><p>为编写可移植代码，不应使用硬编码文件分隔符，而应使用语言库提供的独立于平台的 API。<br><strong>例</strong><strong>&nbsp;2</strong><strong>：</strong>下列代码执行与例 1 相同的功能，但使用独立于平台的 API 来指定文件分隔符：</p><pre>
+<code>File file = new File(directoryName + File.separator + fileName);</code></pre><p>&nbsp;</p><blockquote><h2>5、Portability Flaw: Locale Dependent Comparison</h2></blockquote><p>对可能与区域设置相关的数据进行比较时，应指定相应的区域设置。<br><strong>示例</strong><strong>&nbsp;1</strong><strong>：</strong>以下示例尝试执行验证，以确定用户输入是否包含&nbsp;&lt;script&gt;&nbsp;标签。</p><pre>
 <code>public String tagProcessor(String tag)&#123;
 if (tag.toUpperCase().equals("SCRIPT"))&#123;
 return null;
 &#125;
 //does not contain SCRIPT tag, keep processing input...
-&#125;</code></pre>
-
-<p>关于上述代码的问题是：在使用不带区域设置的&nbsp;java.lang.String.toUpperCase()时，其将使用默认的区域设置规则。使用土耳其区域设置&nbsp;&quot;title&quot;.toUpperCase()时将返回 &quot;T\u0130TLE&quot;，其中 &quot;\u0130&quot; 是 &quot;LATIN CAPITAL LETTER I WITH DOT ABOVE&quot; 字符。这会导致生成意外结果，例如，在示例 1 中，会导致此验证无法捕获 &quot;script&quot; 一词，从而可能造成跨站脚本攻击漏洞。</p>
-
-<p>为了防止出现此问题，请始终确保指定默认区域设置，或者指定可以接受这些字符（如&nbsp;toUpperCase()）并带有 API 的区域设置。&nbsp;<br />
-<br />
-<strong>示例</strong><strong>&nbsp;2:</strong>以下示例通过手动方式将区域设置指定为&nbsp;toUpperCase()&nbsp;的参数。</p>
-
-<pre>
+&#125;</code></pre><p>关于上述代码的问题是：在使用不带区域设置的&nbsp;java.lang.String.toUpperCase()时，其将使用默认的区域设置规则。使用土耳其区域设置&nbsp;&quot;title&quot;.toUpperCase()时将返回 &quot;T\u0130TLE&quot;，其中 &quot;\u0130&quot; 是 &quot;LATIN CAPITAL LETTER I WITH DOT ABOVE&quot; 字符。这会导致生成意外结果，例如，在示例 1 中，会导致此验证无法捕获 &quot;script&quot; 一词，从而可能造成跨站脚本攻击漏洞。</p><p>为了防止出现此问题，请始终确保指定默认区域设置，或者指定可以接受这些字符（如&nbsp;toUpperCase()）并带有 API 的区域设置。&nbsp;<br><br><strong>示例</strong><strong>&nbsp;2:</strong>以下示例通过手动方式将区域设置指定为&nbsp;toUpperCase()&nbsp;的参数。</p><pre>
 <code>import java.util.Locale;
 
 public String tagProcessor(String tag)&#123;
@@ -413,177 +72,54 @@ if (tag.toUpperCase(Locale.ENGLISH).equals("SCRIPT"))&#123;
 return null;
 &#125;
 //does not contain SCRIPT tag, keep processing input
-...&#125;</code></pre>
-
-<p><strong>示例</strong><strong>&nbsp;3</strong><strong>：</strong>以下示例使用了函数java.lang.String.equalsIgnoreCase()API 以防止出现此问题。</p>
-
-<pre>
+...&#125;</code></pre><p><strong>示例</strong><strong>&nbsp;3</strong><strong>：</strong>以下示例使用了函数java.lang.String.equalsIgnoreCase()API 以防止出现此问题。</p><pre>
 <code>public String tagProcessor(String tag)&#123;
 if (tag.equalsIgnoreCase("SCRIPT"))&#123;
 return null;
 &#125;
 //does not contain SCRIPT tag, keep processing input
 ...
-&#125;</code></pre>
-
-<p>因为&nbsp;equalsIgnoreCase()&nbsp;会更改与Character.toLowerCase()&nbsp;和Character.toUpperCase()&nbsp;类似的内容，所以可以防止此问题。这涉及到使用来自&nbsp;UnicodeData&nbsp;文件（由 Unicode 联盟维护的 Unicode 字符数据库的一部分）的信息创建这两种字符串的临时标准格式。即使这可能会导致这些字符在被读取时以不可读的方式呈现出来，但却能够在独立于区域设置的情况下进行比较。<br />
-<strong>Tips:</strong><br />
-1. 如果 SCA 识别到java.util.Locale.setDefault()&nbsp;可在应用程序中的任意位置进行调用，其会假定已执行了相应的区域设置，并且这些问题也不会出现。</p>
-
-<blockquote>
-<h2>6、Access Specifier Manipulation</h2>
-</blockquote>
-
-<p>AccessibleObject API 允许程序员绕过由 Java 访问说明符提供的 access control 检查。特别是它让程序员能够允许反映对象绕过 Java access control，并反过来更改私有字段或调用私有方法、行为，这些通常情况下都是不允许的。<br />
-在此情况下，您正在使用的危险方法是BaseTestCase.java&nbsp;的第&nbsp;45&nbsp;行中的setAccessible()。</p>
-
-<p>只能使用攻击者无法设置的参数，通过有权限的类更改访问说明符。所有出现的访问说明符都应仔细检查。</p>
-
-<blockquote>
-<h2>7、J2EE Bad Practices: Non-Serializable Object Stored in Session</h2>
-</blockquote>
-
-<p>一个 J2EE 应用程序可以利用多个 JVM，以提高应用程序的可靠性和性能。为了在最终用户中将多个 JVM 显示为单个的应用程序，J2EE 容器可以在多个 JVM 之间复制&nbsp;HttpSession&nbsp;对象，所以当一个 JVM 不可用时，另一个 JVM 可以在不中断应用程序流程的情况下接替步骤的执行。<br />
-为了使会话复制能够正常运行，作为应用程序属性存储在会话中的数值必须实现&nbsp;Serializable&nbsp;接口。&nbsp;<br />
-<strong>例</strong><strong>&nbsp;1</strong><strong>：</strong>下面这个类把自己添加到会话中，但由于它不是可序列化的，因此该会话就再也不能被复制了。</p>
-
-<pre>
+&#125;</code></pre><p>因为&nbsp;equalsIgnoreCase()&nbsp;会更改与Character.toLowerCase()&nbsp;和Character.toUpperCase()&nbsp;类似的内容，所以可以防止此问题。这涉及到使用来自&nbsp;UnicodeData&nbsp;文件（由 Unicode 联盟维护的 Unicode 字符数据库的一部分）的信息创建这两种字符串的临时标准格式。即使这可能会导致这些字符在被读取时以不可读的方式呈现出来，但却能够在独立于区域设置的情况下进行比较。<br><strong>Tips:</strong><br>1. 如果 SCA 识别到java.util.Locale.setDefault()&nbsp;可在应用程序中的任意位置进行调用，其会假定已执行了相应的区域设置，并且这些问题也不会出现。</p><blockquote><h2>6、Access Specifier Manipulation</h2></blockquote><p>AccessibleObject API 允许程序员绕过由 Java 访问说明符提供的 access control 检查。特别是它让程序员能够允许反映对象绕过 Java access control，并反过来更改私有字段或调用私有方法、行为，这些通常情况下都是不允许的。<br>在此情况下，您正在使用的危险方法是BaseTestCase.java&nbsp;的第&nbsp;45&nbsp;行中的setAccessible()。</p><p>只能使用攻击者无法设置的参数，通过有权限的类更改访问说明符。所有出现的访问说明符都应仔细检查。</p><blockquote><h2>7、J2EE Bad Practices: Non-Serializable Object Stored in Session</h2></blockquote><p>一个 J2EE 应用程序可以利用多个 JVM，以提高应用程序的可靠性和性能。为了在最终用户中将多个 JVM 显示为单个的应用程序，J2EE 容器可以在多个 JVM 之间复制&nbsp;HttpSession&nbsp;对象，所以当一个 JVM 不可用时，另一个 JVM 可以在不中断应用程序流程的情况下接替步骤的执行。<br>为了使会话复制能够正常运行，作为应用程序属性存储在会话中的数值必须实现&nbsp;Serializable&nbsp;接口。&nbsp;<br><strong>例</strong><strong>&nbsp;1</strong><strong>：</strong>下面这个类把自己添加到会话中，但由于它不是可序列化的，因此该会话就再也不能被复制了。</p><pre>
 <code>public class DataGlob &#123;
     String globName;
     String globValue;
     public void addToSession(HttpSession session) &#123;
         session.setAttribute("glob", this);
     &#125;
-&#125;</code></pre>
-
-<p>很多情况下，要修复这一问题，最简单的方法是让这个违反规则的对象实现&nbsp;Serializable&nbsp;接口。&nbsp;</p>
-
-<p><strong>例</strong><strong>&nbsp;2</strong><strong>：</strong>&nbsp;例 1 中的代码应该用以下方式重写：</p>
-
-<pre>
+&#125;</code></pre><p>很多情况下，要修复这一问题，最简单的方法是让这个违反规则的对象实现&nbsp;Serializable&nbsp;接口。&nbsp;</p><p><strong>例</strong><strong>&nbsp;2</strong><strong>：</strong>&nbsp;例 1 中的代码应该用以下方式重写：</p><pre>
 <code>public class DataGlob implements java.io.Serializable &#123;
     String globName;
     String globValue;
     public void addToSession(HttpSession session) &#123;
         session.setAttribute("glob", this);
     &#125;
-&#125;</code></pre>
-
-<p>注意，对复杂的对象来说，存储在会话中的对象，其传递闭包必须是可序列化的。如果对象 A 引用对象 B，且对象 A 存储在会话中，那么 A 和 B 都必须实现&nbsp;Serializable&nbsp;接口。<br />
-虽然实现&nbsp;Serializable&nbsp;接口通常都很简单（因为该接口不要求类定义任何方法），但是某些类型的对象实现会引发一些相关问题。应密切注意引用外部资源文件的对象。例如，数据流和 JNI 都可能会引发一些相关问题。<br />
-<strong>例</strong><strong>&nbsp;3</strong><strong>：</strong>使用类型检测调用可序列化对象。而不是使用：</p>
-
-<pre>
+&#125;</code></pre><p>注意，对复杂的对象来说，存储在会话中的对象，其传递闭包必须是可序列化的。如果对象 A 引用对象 B，且对象 A 存储在会话中，那么 A 和 B 都必须实现&nbsp;Serializable&nbsp;接口。<br>虽然实现&nbsp;Serializable&nbsp;接口通常都很简单（因为该接口不要求类定义任何方法），但是某些类型的对象实现会引发一些相关问题。应密切注意引用外部资源文件的对象。例如，数据流和 JNI 都可能会引发一些相关问题。<br><strong>例</strong><strong>&nbsp;3</strong><strong>：</strong>使用类型检测调用可序列化对象。而不是使用：</p><pre>
 <code>public static void addToSession(HttpServletRequest req,String attrib, Object obj)&#123;
 　　 HttpSession sess = req.getSession(true);
     sess.setAttribute(attrib, obj);
-&#125;</code></pre>
-
-<p>采用如下方法编写：</p>
-
-<pre>
+&#125;</code></pre><p>采用如下方法编写：</p><pre>
 <code>public static void addToSession(HttpServletRequest req,String attrib, Serializable ser) &#123;
 　　HttpSession sess = req.getSession(true);
 　　sess.setAttribute(attrib, ser);
-&#125;</code></pre>
-
-<p>&nbsp;</p>
-
-<blockquote>
-<h2>8、Insecure Randomness</h2>
-</blockquote>
-
-<p>在对安全性要求较高的环境中，使用一个能产生可预测数值的函数作为随机数据源，会产生 Insecure Randomness 错误。在这种情况下，生成弱随机数的函数是&nbsp;random()，它位于DataFormatUtils.java&nbsp;文件的第&nbsp;577行。电脑是一种具有确定性的机器，因此不可能产生真正的随机性。伪随机数生成器 (PRNG) 近似于随机算法，始于一个能计算后续数值的种子。PRNG 包括两种类型：统计学的 PRNG 和密码学的 PRNG。统计学的 PRNG 可提供有用的统计资料，但其输出结果很容易预测，因此数据流容易复制。若安全性取决于生成数值的不可预测性，则此类型不适用。密码学的 PRNG 通过可产生较难预测的输出结果来应对这一问题。为了使加密数值更为安全，必须使攻击者根本无法、或极不可能将它与真实的随机数加以区分。通常情况下，如果并未声明 PRNG 算法带有加密保护，那么它有可能就是一个统计学的 PRNG，不应在对安全性要求较高的环境中使用，其中随着它的使用可能会导致严重的漏洞（如易于猜测的密码、可预测的加密密钥、会话劫持攻击和 DNS 欺骗）。<br />
-<strong>示例：</strong>&nbsp;下面的代码可利用统计学的 PRNG 为购买产品后仍在有效期内的收据创建一个 URL。</p>
-
-<pre>
+&#125;</code></pre><p>&nbsp;</p><blockquote><h2>8、Insecure Randomness</h2></blockquote><p>在对安全性要求较高的环境中，使用一个能产生可预测数值的函数作为随机数据源，会产生 Insecure Randomness 错误。在这种情况下，生成弱随机数的函数是&nbsp;random()，它位于DataFormatUtils.java&nbsp;文件的第&nbsp;577行。电脑是一种具有确定性的机器，因此不可能产生真正的随机性。伪随机数生成器 (PRNG) 近似于随机算法，始于一个能计算后续数值的种子。PRNG 包括两种类型：统计学的 PRNG 和密码学的 PRNG。统计学的 PRNG 可提供有用的统计资料，但其输出结果很容易预测，因此数据流容易复制。若安全性取决于生成数值的不可预测性，则此类型不适用。密码学的 PRNG 通过可产生较难预测的输出结果来应对这一问题。为了使加密数值更为安全，必须使攻击者根本无法、或极不可能将它与真实的随机数加以区分。通常情况下，如果并未声明 PRNG 算法带有加密保护，那么它有可能就是一个统计学的 PRNG，不应在对安全性要求较高的环境中使用，其中随着它的使用可能会导致严重的漏洞（如易于猜测的密码、可预测的加密密钥、会话劫持攻击和 DNS 欺骗）。<br><strong>示例：</strong>&nbsp;下面的代码可利用统计学的 PRNG 为购买产品后仍在有效期内的收据创建一个 URL。</p><pre>
 <code>String GenerateReceiptURL(String baseUrl) &#123;
 　　Random ranGen = new Random();
 　　ranGen.setSeed((new Date()).getTime());
 　　return (baseUrl + ranGen.nextInt(400000000) + ".html");
-&#125;</code></pre>
-
-<p>这段代码使用&nbsp;Random.nextInt()&nbsp;函数为它所生成的收据页面生成独特的标识符。因为&nbsp;Random.nextInt()&nbsp;是一个统计学的 PRNG，攻击者很容易猜到由它所生成的字符串。尽管收据系统的底层设计也存在错误，但如果使用了一个不生成可预测收据标识符的随机数生成器（如密码学的 PRNG），会更安全一些。</p>
-
-<p>当不可预测性至关重要时，如大多数对安全性要求较高的环境都采用随机性，这时可以使用密码学的 PRNG。不管选择了哪一种 PRNG，都要始终使用带有充足熵的数值作为该算法的种子。（诸如当前时间之类的数值只提供很小的熵，因此不应该使用。）Java 语言在java.security.SecureRandom&nbsp;中提供了一个加密 PRNG。就像&nbsp;java.security中其他以算法为基础的类那样，SecureRandom&nbsp;提供了与某个特定算法集合相关的包，该包可以独立实现。当使用SecureRandom.getInstance()&nbsp;请求一个&nbsp;SecureRandom&nbsp;实例时，您可以申请实现某个特定的算法。如果算法可行，那么您可以将它作为SecureRandom&nbsp;的对象使用。如果算法不可行，或者您没有为算法明确特定的实现方法，那么会由系统为您选择&nbsp;SecureRandom&nbsp;的实现方法。&nbsp;</p>
-
-<p>Sun 在名为&nbsp;SHA1PRNG&nbsp;的 Java 版本中提供了一种单独实现&nbsp;SecureRandom的方式，Sun 将其描述为计算：<br />
-&ldquo;SHA-1 可以计算一个真实的随机种子参数的散列值，同时，该种子参数带有一个 64 比特的计算器，会在每一次操作后加 1。在 160 比特的 SHA-1 输出中，只能使用 64 比特的输出 [1]。&rdquo;&nbsp;<br />
-然而，文档中有关 Sun 的&nbsp;SHA1PRNG算法实现细节的相关记录很少，人们无法了解算法实现中使用的熵的来源，因此也并不清楚输出中到底存在多少真实的随机数值。尽管有关 Sun 的实现方法网络上有各种各样的猜测，但是有一点无庸置疑，即算法具有很强的加密性，可以在对安全性极为敏感的各种内容中安全地使用。</p>
-
-<blockquote>
-<h2>9、XML External Entity Injection</h2>
-</blockquote>
-
-<p>问题描述：XML External Entities 攻击可利用能够在处理时动态构建文档的 XML 功能。XML 实体可动态包含来自给定资源的数据。外部实体允许 XML 文档包含来自外部 URI 的数据。除非另行配置，否则外部实体会迫使 XML 解析器访问由 URI 指定的资源，例如位于本地计算机或远程系统上的某个文件。这一行为会将应用程序暴露给 XML External Entity (XXE) 攻击，从而用于拒绝本地系统的服务，获取对本地计算机上文件未经授权的访问权限，扫描远程计算机，并拒绝远程系统的服务。<br />
-<br />
-下面的 XML 文档介绍了 XXE 攻击的示例。</p>
-
-<pre>
+&#125;</code></pre><p>这段代码使用&nbsp;Random.nextInt()&nbsp;函数为它所生成的收据页面生成独特的标识符。因为&nbsp;Random.nextInt()&nbsp;是一个统计学的 PRNG，攻击者很容易猜到由它所生成的字符串。尽管收据系统的底层设计也存在错误，但如果使用了一个不生成可预测收据标识符的随机数生成器（如密码学的 PRNG），会更安全一些。</p><p>当不可预测性至关重要时，如大多数对安全性要求较高的环境都采用随机性，这时可以使用密码学的 PRNG。不管选择了哪一种 PRNG，都要始终使用带有充足熵的数值作为该算法的种子。（诸如当前时间之类的数值只提供很小的熵，因此不应该使用。）Java 语言在java.security.SecureRandom&nbsp;中提供了一个加密 PRNG。就像&nbsp;java.security中其他以算法为基础的类那样，SecureRandom&nbsp;提供了与某个特定算法集合相关的包，该包可以独立实现。当使用SecureRandom.getInstance()&nbsp;请求一个&nbsp;SecureRandom&nbsp;实例时，您可以申请实现某个特定的算法。如果算法可行，那么您可以将它作为SecureRandom&nbsp;的对象使用。如果算法不可行，或者您没有为算法明确特定的实现方法，那么会由系统为您选择&nbsp;SecureRandom&nbsp;的实现方法。&nbsp;</p><p>Sun 在名为&nbsp;SHA1PRNG&nbsp;的 Java 版本中提供了一种单独实现&nbsp;SecureRandom的方式，Sun 将其描述为计算：<br>&ldquo;SHA-1 可以计算一个真实的随机种子参数的散列值，同时，该种子参数带有一个 64 比特的计算器，会在每一次操作后加 1。在 160 比特的 SHA-1 输出中，只能使用 64 比特的输出 [1]。&rdquo;&nbsp;<br>然而，文档中有关 Sun 的&nbsp;SHA1PRNG算法实现细节的相关记录很少，人们无法了解算法实现中使用的熵的来源，因此也并不清楚输出中到底存在多少真实的随机数值。尽管有关 Sun 的实现方法网络上有各种各样的猜测，但是有一点无庸置疑，即算法具有很强的加密性，可以在对安全性极为敏感的各种内容中安全地使用。</p><blockquote><h2>9、XML External Entity Injection</h2></blockquote><p>问题描述：XML External Entities 攻击可利用能够在处理时动态构建文档的 XML 功能。XML 实体可动态包含来自给定资源的数据。外部实体允许 XML 文档包含来自外部 URI 的数据。除非另行配置，否则外部实体会迫使 XML 解析器访问由 URI 指定的资源，例如位于本地计算机或远程系统上的某个文件。这一行为会将应用程序暴露给 XML External Entity (XXE) 攻击，从而用于拒绝本地系统的服务，获取对本地计算机上文件未经授权的访问权限，扫描远程计算机，并拒绝远程系统的服务。<br><br>下面的 XML 文档介绍了 XXE 攻击的示例。</p><pre>
 <code>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
 &lt;!DOCTYPE foo [ 
 &lt;!ELEMENT foo ANY &gt;
-&lt;!ENTITY xxe SYSTEM "file:///dev/random" &gt;]&gt;&lt;foo&gt;&amp;xxe;&lt;/foo&gt;</code></pre>
-
-<p>如果 XML 解析器尝试使用 /dev/random 文件中的内容来替代实体，则此示例会使服务器（使用 UNIX 系统）崩溃。</p>
-
-<p>解决方案：应对 XML 解析器进行安全配置，使它不允许将外部实体包含在传入的 XML 文档中。<br />
-<br />
-为了避免 XXE injections，应为 XML 代理、解析器或读取器设置下面的属性：</p>
-
-<pre>
+&lt;!ENTITY xxe SYSTEM "file:///dev/random" &gt;]&gt;&lt;foo&gt;&amp;xxe;&lt;/foo&gt;</code></pre><p>如果 XML 解析器尝试使用 /dev/random 文件中的内容来替代实体，则此示例会使服务器（使用 UNIX 系统）崩溃。</p><p>解决方案：应对 XML 解析器进行安全配置，使它不允许将外部实体包含在传入的 XML 文档中。<br><br>为了避免 XXE injections，应为 XML 代理、解析器或读取器设置下面的属性：</p><pre>
 <code>factory.setFeature("http://xml.org/sax/features/external-general-entities", false);
-factory.setFeature("http://xml.org/sax/features/external-parameter-entities", false);</code></pre>
-
-<p>如果不需要 inline DOCTYPE 声明，可使用以下属性将其完全禁用：</p>
-
-<pre>
+factory.setFeature("http://xml.org/sax/features/external-parameter-entities", false);</code></pre><p>如果不需要 inline DOCTYPE 声明，可使用以下属性将其完全禁用：</p><pre>
 <code>factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
-</code></pre>
-
-<p>Dynamic Code Evaluation: Unsafe Deserialization</p>
-
-<p>问题描述：Java 序列化会将对象图转换为字节流（包含对象本身和必要的元数据），以便通过字节流进行重构。开发人员可以创建自定义代码，以协助 Java 对象反序列化过程，在此期间，他们甚至可以使用其他对象或代理替代反序列化对象。在对象重构过程中，并在对象返回至应用程序并转换为预期的类型之前，会执行自定义反序列化过程。到开发人员尝试强制执行预期的类型时，代码可能已被执行。&nbsp;<br />
-<br />
-在必须存在于运行时类路径中且无法由攻击者注入的可序列化类中，会自定义反序列化例程，所以这些攻击的可利用性取决于应用程序环境中的可用类。令人遗憾的是，常用的第三方类，甚至 JDK 类都可以被滥用，导致 JVM 资源耗尽、部署恶意文件或运行任意代码。</p>
-
-<p>解决方案：如果可能，在没有验证对象流的内容的情况下，请勿对不可信数据进行反序列化。为了验证要进行反序列化的类，应使用前瞻反序列化模式。&nbsp;<br />
-<br />
-对象流首先将包含类描述元数据，然后包含其成员字段的序列化字节。Java 序列化过程允许开发人员读取类描述，并确定是继续进行对象的反序列化还是中止对象的反序列化。为此，需要在应执行类验证和确认的位置，子类化java.io.ObjectInputStream&nbsp;并提供resolveClass(ObjectStreamClass desc)方法的自定义实现。&nbsp;<br />
-<br />
-已有易于使用的前瞻模式实现方式，例如 Apache Commons IO (org.apache.commons.io.serialization.ValidatingObjectInputStream)。始终使用严格的白名单方法，以仅允许对预期类型进行反序列化。不建议使用黑名单方法，因为攻击者可以使用许多可用小工具绕过黑名单。此外，请谨记，尽管用于执行代码的某些类已公开，但是还可能存在其他未知或未公开的类，因此，白名单方法始终都是首选方法。应审计白名单中允许的任何类，以确保对其进行反序列化是安全的。<br />
-<br />
-为避免 Denial of Service，建议您覆盖&nbsp;resolveObject(Object obj)&nbsp;方法，以便计算要进行反序列化的对象数量，并在超过阈值时中止反序列化。<br />
-在库或框架（例如，使用 JMX、RMI、JMS、HTTP Invoker 时）中执行反序列化时，上述建议并不适用，因为它超出了开发人员的控制范围。在这些情况下，您可能需要确保这些协议满足以下要求：<br />
-- 未公开披露。<br />
-- 使用身份验证。<br />
-- 使用完整性检查。<br />
-- 使用加密。<br />
-<br />
-此外，每当应用程序通过ObjectInputStream&nbsp;执行反序列化时，HPE Security Fortify Runtime（HPE Security Fortify 运行时）都会提供要强制执行的安全控制，以此同时保护应用程序代码以及库和框架代码，防止遭到此类攻击。</p>
-
-<blockquote>
-<h2>10、System Information Leak: External</h2>
-</blockquote>
-
-<p>问题描述：当系统数据或调试信息通过套接字或网络连接使程序流向远程机器时，就会发生外部信息泄露。外部信息泄露会暴露有关操作系统、完整路径名、现有用户名或配置文件位置的特定数据，从而使攻击者有机可乘，它比内部信息（攻击者更难访问）泄露更严重。<br />
-在这种情况下，AjaxData.java&nbsp;的第865&nbsp;行会调用&nbsp;write()。<br />
-<strong>例</strong><strong>&nbsp;1</strong><strong>：</strong>&nbsp;以下代码泄露了 HTTP 响应中的异常信息：</p>
-
-<pre>
+</code></pre><p>Dynamic Code Evaluation: Unsafe Deserialization</p><p>问题描述：Java 序列化会将对象图转换为字节流（包含对象本身和必要的元数据），以便通过字节流进行重构。开发人员可以创建自定义代码，以协助 Java 对象反序列化过程，在此期间，他们甚至可以使用其他对象或代理替代反序列化对象。在对象重构过程中，并在对象返回至应用程序并转换为预期的类型之前，会执行自定义反序列化过程。到开发人员尝试强制执行预期的类型时，代码可能已被执行。&nbsp;<br><br>在必须存在于运行时类路径中且无法由攻击者注入的可序列化类中，会自定义反序列化例程，所以这些攻击的可利用性取决于应用程序环境中的可用类。令人遗憾的是，常用的第三方类，甚至 JDK 类都可以被滥用，导致 JVM 资源耗尽、部署恶意文件或运行任意代码。</p><p>解决方案：如果可能，在没有验证对象流的内容的情况下，请勿对不可信数据进行反序列化。为了验证要进行反序列化的类，应使用前瞻反序列化模式。&nbsp;<br><br>对象流首先将包含类描述元数据，然后包含其成员字段的序列化字节。Java 序列化过程允许开发人员读取类描述，并确定是继续进行对象的反序列化还是中止对象的反序列化。为此，需要在应执行类验证和确认的位置，子类化java.io.ObjectInputStream&nbsp;并提供resolveClass(ObjectStreamClass desc)方法的自定义实现。&nbsp;<br><br>已有易于使用的前瞻模式实现方式，例如 Apache Commons IO (org.apache.commons.io.serialization.ValidatingObjectInputStream)。始终使用严格的白名单方法，以仅允许对预期类型进行反序列化。不建议使用黑名单方法，因为攻击者可以使用许多可用小工具绕过黑名单。此外，请谨记，尽管用于执行代码的某些类已公开，但是还可能存在其他未知或未公开的类，因此，白名单方法始终都是首选方法。应审计白名单中允许的任何类，以确保对其进行反序列化是安全的。<br><br>为避免 Denial of Service，建议您覆盖&nbsp;resolveObject(Object obj)&nbsp;方法，以便计算要进行反序列化的对象数量，并在超过阈值时中止反序列化。<br>在库或框架（例如，使用 JMX、RMI、JMS、HTTP Invoker 时）中执行反序列化时，上述建议并不适用，因为它超出了开发人员的控制范围。在这些情况下，您可能需要确保这些协议满足以下要求：<br>- 未公开披露。<br>- 使用身份验证。<br>- 使用完整性检查。<br>- 使用加密。<br><br>此外，每当应用程序通过ObjectInputStream&nbsp;执行反序列化时，HPE Security Fortify Runtime（HPE Security Fortify 运行时）都会提供要强制执行的安全控制，以此同时保护应用程序代码以及库和框架代码，防止遭到此类攻击。</p><blockquote><h2>10、System Information Leak: External</h2></blockquote><p>问题描述：当系统数据或调试信息通过套接字或网络连接使程序流向远程机器时，就会发生外部信息泄露。外部信息泄露会暴露有关操作系统、完整路径名、现有用户名或配置文件位置的特定数据，从而使攻击者有机可乘，它比内部信息（攻击者更难访问）泄露更严重。<br>在这种情况下，AjaxData.java&nbsp;的第865&nbsp;行会调用&nbsp;write()。<br><strong>例</strong><strong>&nbsp;1</strong><strong>：</strong>&nbsp;以下代码泄露了 HTTP 响应中的异常信息：</p><pre>
 <code>protected void doPost (HttpServletRequest req, HttpServletResponse res) throws IOException &#123;
 ...
 PrintWriter out = res.getWriter(); try &#123;
 ...
-&#125; catch (Exception e) &#123; out.println(e.getMessage()); &#125; &#125;</code></pre>
-
-<p>该信息可以显示给远程用户。在某些情况下，该错误消息恰好可以告诉攻击者入侵这一系统的可能性究竟有多大。例如，一个数据库错误消息可以揭示应用程序容易受到 SQL Injection 攻击。其他的错误消息可以揭示有关该系统的更多间接线索。在上述例子中，泄露的信息可能会暗示操作系统的类型、系统上安装了哪些应用程序，以及管理员在配置应用程序时做了哪些方面的努力。<br />
-<br />
-在移动世界，信息泄露也让人担忧。移动平台的本质是从各种来源下载并在相同设备上运行的应用程序。因为恶意软件在银行应用程序附近运行的可能性很高，所以应用程序的作者需要注意消息所包含的信息，这些消息将会发送给在设备上运行的其他应用程序。<br />
-<br />
-<strong>例</strong><strong>&nbsp;2</strong><strong>：</strong>以下代码向所有注册 Android 的接收者广播捕获到的堆栈跟踪异常。</p>
-
-<pre>
+&#125; catch (Exception e) &#123; out.println(e.getMessage()); &#125; &#125;</code></pre><p>该信息可以显示给远程用户。在某些情况下，该错误消息恰好可以告诉攻击者入侵这一系统的可能性究竟有多大。例如，一个数据库错误消息可以揭示应用程序容易受到 SQL Injection 攻击。其他的错误消息可以揭示有关该系统的更多间接线索。在上述例子中，泄露的信息可能会暗示操作系统的类型、系统上安装了哪些应用程序，以及管理员在配置应用程序时做了哪些方面的努力。<br><br>在移动世界，信息泄露也让人担忧。移动平台的本质是从各种来源下载并在相同设备上运行的应用程序。因为恶意软件在银行应用程序附近运行的可能性很高，所以应用程序的作者需要注意消息所包含的信息，这些消息将会发送给在设备上运行的其他应用程序。<br><br><strong>例</strong><strong>&nbsp;2</strong><strong>：</strong>以下代码向所有注册 Android 的接收者广播捕获到的堆栈跟踪异常。</p><pre>
 <code>try &#123;
 &#125; catch (Exception e) &#123; 
 　　String exception = Log.getStackTraceString(e); 
@@ -591,13 +127,7 @@ PrintWriter out = res.getWriter(); try &#123;
 　　i.setAction("SEND_EXCEPTION"); 
 　　i.putExtra("exception", exception);
 　 view.getContext().sendBroadcast(i); 
-&#125;</code></pre>
-
-<p>这是另一种情况，特定于移动世界。大多数移动设备现在执行的是&ldquo;近场通信&rdquo;(NFC) 协议，以便使用无线电通信在设备之间快速共享信息。它在设备极为贴近或互相接触时有效。即使 NFC 的通信范围仅局限于几厘米，也可能发生窃听、修改数据以及各种其他类型的攻击情况，因为 NFC 本身并不能确保通信安全。<br />
-<br />
-<strong>例</strong><strong>&nbsp;3</strong><strong>：</strong>Android 平台为 NFC 提供了支持。以下代码将创建一条消息，该消息会被发送给所在范围内的其他设备。</p>
-
-<pre>
+&#125;</code></pre><p>这是另一种情况，特定于移动世界。大多数移动设备现在执行的是&ldquo;近场通信&rdquo;(NFC) 协议，以便使用无线电通信在设备之间快速共享信息。它在设备极为贴近或互相接触时有效。即使 NFC 的通信范围仅局限于几厘米，也可能发生窃听、修改数据以及各种其他类型的攻击情况，因为 NFC 本身并不能确保通信安全。<br><br><strong>例</strong><strong>&nbsp;3</strong><strong>：</strong>Android 平台为 NFC 提供了支持。以下代码将创建一条消息，该消息会被发送给所在范围内的其他设备。</p><pre>
 <code>...
 public static final String TAG = "NfcActivity"; private static final String DATA_SPLITTER = "__:DATA:__"; private static final String MIME_TYPE = "application/my.applications.mimetype";
 ...
@@ -607,17 +137,7 @@ NfcAdapter nfcAdapter = NfcAdapter.getDefaultAdapter(this); if (nfcAdapter == nu
 
 String text = TAG + DATA_SPLITTER + VERSION; NdefRecord record = new NdefRecord(NdefRecord.TNF_MIME_MEDIA, MIME_TYPE.getBytes(), new byte[0], text.getBytes()); NdefRecord[] records = &#123; record &#125;; NdefMessage msg = new NdefMessage(records); nfcAdapter.setNdefPushMessage(msg, this);
 ...
-</code></pre>
-
-<p>NFC 数据交换格式 (NDEF) 消息包含类型化数据、URI 或自定义应用程序负载。如果该消息包含与应用程序有关的信息（如其名称、MIME 类型或设备软件版本），则该信息将被泄露给窃听者。</p>
-
-<p>解决方案：编写错误消息时，始终要牢记安全性。在编码的过程中，尽量避免使用繁复的消息，提倡使用简短的错误消息。限制生成与存储繁复的输出数据将有助于管理员和程序员诊断问题的所在。此外，还要留意有关调试的跟踪信息，有时它可能出现在不明显的位置（例如嵌入在错误页 HTML 代码的注释行中）。<br />
-<br />
-即便是并未揭示栈踪迹或数据库转储的简短错误消息，也有可能帮助攻击者发起攻击。例如，&ldquo;Access Denied&rdquo;（拒绝访问）消息可以揭示系统中存在一个文件或用户。由于这个原因，它应始终保留信息，而不是将其直接发送到程序外部的资源。<br />
-<br />
-<strong>例</strong><strong>&nbsp;4</strong><strong>：</strong>以下代码仅在您的应用程序中广播所捕获到的异常的堆栈跟踪，以便它不能泄露给系统中的其他应用程序。还有一个额外的好处，这比在系统中全局广播更高效。</p>
-
-<pre>
+</code></pre><p>NFC 数据交换格式 (NDEF) 消息包含类型化数据、URI 或自定义应用程序负载。如果该消息包含与应用程序有关的信息（如其名称、MIME 类型或设备软件版本），则该信息将被泄露给窃听者。</p><p>解决方案：编写错误消息时，始终要牢记安全性。在编码的过程中，尽量避免使用繁复的消息，提倡使用简短的错误消息。限制生成与存储繁复的输出数据将有助于管理员和程序员诊断问题的所在。此外，还要留意有关调试的跟踪信息，有时它可能出现在不明显的位置（例如嵌入在错误页 HTML 代码的注释行中）。<br><br>即便是并未揭示栈踪迹或数据库转储的简短错误消息，也有可能帮助攻击者发起攻击。例如，&ldquo;Access Denied&rdquo;（拒绝访问）消息可以揭示系统中存在一个文件或用户。由于这个原因，它应始终保留信息，而不是将其直接发送到程序外部的资源。<br><br><strong>例</strong><strong>&nbsp;4</strong><strong>：</strong>以下代码仅在您的应用程序中广播所捕获到的异常的堆栈跟踪，以便它不能泄露给系统中的其他应用程序。还有一个额外的好处，这比在系统中全局广播更高效。</p><pre>
 <code class="language-java">... 
 try &#123;
  ... 
@@ -627,184 +147,56 @@ try &#123;
     i.setAction("SEND_EXCEPTION"); 
     i.putExtra("exception", exception); 
     LocalBroadcastManager.getInstance(view.getContext()).sendBroadcast(i); 
-&#125; ...</code></pre>
-
-<p>如果您担心 Android 设备上的系统数据会通过 NFC 泄露，那么您可以采取以下三种措施之一。不把系统数据包括在发送到范围内其他设备的消息中，或加密消息负载，或在更高层中建立安全通信通道。<br />
-<strong>Tips:</strong><br />
-1. 不要依赖于封装器脚本、组织内部的 IT 策略或是思维敏捷的系统管理员来避免 System Information Leak 漏洞。编写安全的软件才是关键。<br />
-2. 这类漏洞并不适用于所有类型的程序。例如，如果您在一个客户机上执行应用程序，而攻击者已经获取了该客户机上的系统信息，或者如果您仅把系统信息打印到一个可信赖的日志文件中，就可以使用 AuditGuide 来过滤这一类别。</p>
-
-<blockquote>
-<h2>11、Path Manipulation</h2>
-</blockquote>
-
-<p>问题描述：当满足以下两个条件时，就会产生 path manipulation 错误：<br />
-1. 攻击者能够指定某一 file system 操作中所使用的路径。&nbsp;<br />
-2. 攻击者可以通过指定特定资源来获取某种权限，而这种权限在一般情况下是不可能获得的。<br />
-例如，在某一程序中，攻击者可以获得特定的权限，以重写指定的文件或是在其控制的配置环境下运行程序。&nbsp;<br />
-在这种情况下，攻击者可以指定某个特定的数值进入&nbsp;TarUtils.java&nbsp;中第391&nbsp;行的&nbsp;entries()，这一数值可以通过&nbsp;TarUtils.java&nbsp;中第&nbsp;396&nbsp;行的FileOutputStream()&nbsp;访问 file system 资源。<br />
-<br />
-<strong>例</strong><strong>&nbsp;1</strong><strong>：</strong>&nbsp;下面的代码使用来自于 HTTP 请求的输入来创建一个文件名。程序员没有考虑到攻击者可能使用像&ldquo;../../tomcat/conf/server.xml&rdquo;一样的文件名，从而导致应用程序删除它自己的配置文件。&nbsp;</p>
-
-<pre>
+&#125; ...</code></pre><p>如果您担心 Android 设备上的系统数据会通过 NFC 泄露，那么您可以采取以下三种措施之一。不把系统数据包括在发送到范围内其他设备的消息中，或加密消息负载，或在更高层中建立安全通信通道。<br><strong>Tips:</strong><br>1. 不要依赖于封装器脚本、组织内部的 IT 策略或是思维敏捷的系统管理员来避免 System Information Leak 漏洞。编写安全的软件才是关键。<br>2. 这类漏洞并不适用于所有类型的程序。例如，如果您在一个客户机上执行应用程序，而攻击者已经获取了该客户机上的系统信息，或者如果您仅把系统信息打印到一个可信赖的日志文件中，就可以使用 AuditGuide 来过滤这一类别。</p><blockquote><h2>11、Path Manipulation</h2></blockquote><p>问题描述：当满足以下两个条件时，就会产生 path manipulation 错误：<br>1. 攻击者能够指定某一 file system 操作中所使用的路径。&nbsp;<br>2. 攻击者可以通过指定特定资源来获取某种权限，而这种权限在一般情况下是不可能获得的。<br>例如，在某一程序中，攻击者可以获得特定的权限，以重写指定的文件或是在其控制的配置环境下运行程序。&nbsp;<br>在这种情况下，攻击者可以指定某个特定的数值进入&nbsp;TarUtils.java&nbsp;中第391&nbsp;行的&nbsp;entries()，这一数值可以通过&nbsp;TarUtils.java&nbsp;中第&nbsp;396&nbsp;行的FileOutputStream()&nbsp;访问 file system 资源。<br><br><strong>例</strong><strong>&nbsp;1</strong><strong>：</strong>&nbsp;下面的代码使用来自于 HTTP 请求的输入来创建一个文件名。程序员没有考虑到攻击者可能使用像&ldquo;../../tomcat/conf/server.xml&rdquo;一样的文件名，从而导致应用程序删除它自己的配置文件。&nbsp;</p><pre>
 <code>String rName = request.getParameter("reportName");
 File rFile = new File("/usr/local/apfr/reports/" + rName);
 ...
-rFile.delete();</code></pre>
-
-<p><strong>例</strong><strong>&nbsp;2</strong><strong>：</strong>&nbsp;下面的代码使用来自于配置文件的输入来决定打开哪个文件，并返回给用户。如果程序在一定的权限下运行，且恶意用户能够篡改配置文件，那么他们可以通过程序读取系统中以&nbsp;.txt&nbsp;扩展名结尾的所有文件。&nbsp;</p>
-
-<pre>
+rFile.delete();</code></pre><p><strong>例</strong><strong>&nbsp;2</strong><strong>：</strong>&nbsp;下面的代码使用来自于配置文件的输入来决定打开哪个文件，并返回给用户。如果程序在一定的权限下运行，且恶意用户能够篡改配置文件，那么他们可以通过程序读取系统中以&nbsp;.txt&nbsp;扩展名结尾的所有文件。&nbsp;</p><pre>
 <code>fis = new FileInputStream(cfg.getProperty("sub")+".txt");
 amt = fis.read(arr);
-out.println(arr);</code></pre>
-
-<p>有些人认为在移动世界中，典型的漏洞（如 path manipulation）是无意义的 -- 为什么用户要攻击自己？但是，谨记移动平台的本质是从各种来源下载并在相同设备上运行的应用程序。恶意软件在银行应用程序附近运行的可能性很高，它们会强制扩展移动应用程序的攻击面（包括跨进程通信）。<br />
-<br />
-<strong>例</strong><strong>&nbsp;3</strong><strong>：</strong>以下代码将例 1 改编为适用于 Android 平台。</p>
-
-<pre>
+out.println(arr);</code></pre><p>有些人认为在移动世界中，典型的漏洞（如 path manipulation）是无意义的 -- 为什么用户要攻击自己？但是，谨记移动平台的本质是从各种来源下载并在相同设备上运行的应用程序。恶意软件在银行应用程序附近运行的可能性很高，它们会强制扩展移动应用程序的攻击面（包括跨进程通信）。<br><br><strong>例</strong><strong>&nbsp;3</strong><strong>：</strong>以下代码将例 1 改编为适用于 Android 平台。</p><pre>
 <code>...
 String rName = this.getIntent().getExtras().getString("reportName");
 File rFile = getBaseContext().getFileStreamPath(rName);
 ...
 rFile.delete();
-...</code></pre>
-
-<p>解决方案：防止 path manipulation 的最佳方法是采用一些间接手段：例如创建一份合法资源名的列表，并且规定用户只能选择其中的文件名。通过这种方法，用户就不能直接由自己来指定资源的名称了。&nbsp;<br />
-<br />
-但在某些情况下，这种方法并不可行，因为这样一份合法资源名的列表过于庞大、难以跟踪。因此，程序员通常在这种情况下采用黑名单的办法。在输入之前，黑名单会有选择地拒绝或避免潜在的危险字符。但是，任何这样一份黑名单都不可能是完整的，而且将随着时间的推移而过时。更好的方法是创建一份白名单，允许其中的字符出现在资源名称中，且只接受完全由这些被认可的字符组成的输入。<br />
-<br />
-<strong>Tips:</strong><br />
-<br />
-1. 如果程序正在执行输入验证，那么您就应确信此验证正确无误，并使用 HPE Security Fortify Custom Rules Editor（HPE Security Fortify 自定义规则编辑器）为该验证例程创建清理规则。<br />
-<br />
-2. 执行本身有效的黑名单是一件非常困难的事情，因此，如果验证逻辑完全依赖于黑名单方法，那么有必要对这种逻辑进行质疑。鉴于不同类型的输入编码以及各种元字符集在不同的操作系统、数据库或其他资源中可能有不同的含义，确定随着需求的不断变化，黑名单能否方便、正确、完整地进行更新。<br />
-<br />
-3. 许多现代 Web 框架都提供对用户输入执行验证的机制。其中包括 Struts 和 Spring MVC。为了突出显示未经验证的输入源，HPE Security Fortify 安全编码规则包会降低 HPE Security Fortify Static Code Analyzer（HPE Security Fortify 静态代码分析器）报告的问题被利用的可能性，并在使用框架验证机制时提供相应的依据，以动态重新调整问题优先级。我们将这种功能称之为上下文敏感排序。为了进一步帮助 HPE Security Fortify 用户执行审计过程，HPE Security Fortify 软件安全研究团队提供了数据验证项目模板，该模板会根据应用于输入源的验证机制，将问题分组到多个文件夹中。</p>
-
-<blockquote>
-<h2>12、Often Misused: Authentication</h2>
-</blockquote>
-
-<p>问题描述：许多 DNS 服务器都很容易被攻击者欺骗，所以应考虑到某天软件有可能会在有问题的 DNS 服务器环境下运行。如果允许攻击者进行 DNS 更新（有时称为 DNS 缓存中毒），则他们会通过自己的机器路由您的网络流量，或者让他们的 IP 地址看上去就在您的域中。勿将系统安全寄托在 DNS 名称上。<br />
-在这种情况下，DNS 信息通过RandomGUID.java&nbsp;的第&nbsp;55&nbsp;行中的getLocalHost()&nbsp;进入程序。<br />
-<br />
-<strong>示例：</strong>以下代码使用 DNS 查找，以确定输入请求是否来自可信赖的主机。如果攻击者可以攻击 DNS 缓存，那么他们就会获得信任。</p>
-
-<pre>
+...</code></pre><p>解决方案：防止 path manipulation 的最佳方法是采用一些间接手段：例如创建一份合法资源名的列表，并且规定用户只能选择其中的文件名。通过这种方法，用户就不能直接由自己来指定资源的名称了。&nbsp;<br><br>但在某些情况下，这种方法并不可行，因为这样一份合法资源名的列表过于庞大、难以跟踪。因此，程序员通常在这种情况下采用黑名单的办法。在输入之前，黑名单会有选择地拒绝或避免潜在的危险字符。但是，任何这样一份黑名单都不可能是完整的，而且将随着时间的推移而过时。更好的方法是创建一份白名单，允许其中的字符出现在资源名称中，且只接受完全由这些被认可的字符组成的输入。<br><br><strong>Tips:</strong><br><br>1. 如果程序正在执行输入验证，那么您就应确信此验证正确无误，并使用 HPE Security Fortify Custom Rules Editor（HPE Security Fortify 自定义规则编辑器）为该验证例程创建清理规则。<br><br>2. 执行本身有效的黑名单是一件非常困难的事情，因此，如果验证逻辑完全依赖于黑名单方法，那么有必要对这种逻辑进行质疑。鉴于不同类型的输入编码以及各种元字符集在不同的操作系统、数据库或其他资源中可能有不同的含义，确定随着需求的不断变化，黑名单能否方便、正确、完整地进行更新。<br><br>3. 许多现代 Web 框架都提供对用户输入执行验证的机制。其中包括 Struts 和 Spring MVC。为了突出显示未经验证的输入源，HPE Security Fortify 安全编码规则包会降低 HPE Security Fortify Static Code Analyzer（HPE Security Fortify 静态代码分析器）报告的问题被利用的可能性，并在使用框架验证机制时提供相应的依据，以动态重新调整问题优先级。我们将这种功能称之为上下文敏感排序。为了进一步帮助 HPE Security Fortify 用户执行审计过程，HPE Security Fortify 软件安全研究团队提供了数据验证项目模板，该模板会根据应用于输入源的验证机制，将问题分组到多个文件夹中。</p><blockquote><h2>12、Often Misused: Authentication</h2></blockquote><p>问题描述：许多 DNS 服务器都很容易被攻击者欺骗，所以应考虑到某天软件有可能会在有问题的 DNS 服务器环境下运行。如果允许攻击者进行 DNS 更新（有时称为 DNS 缓存中毒），则他们会通过自己的机器路由您的网络流量，或者让他们的 IP 地址看上去就在您的域中。勿将系统安全寄托在 DNS 名称上。<br>在这种情况下，DNS 信息通过RandomGUID.java&nbsp;的第&nbsp;55&nbsp;行中的getLocalHost()&nbsp;进入程序。<br><br><strong>示例：</strong>以下代码使用 DNS 查找，以确定输入请求是否来自可信赖的主机。如果攻击者可以攻击 DNS 缓存，那么他们就会获得信任。</p><pre>
 <code>String ip = request.getRemoteAddr();
 InetAddress addr = InetAddress.getByName(ip);
 if (addr.getCanonicalHostName().endsWith("trustme.com")) &#123;
 trusted = true;
-&#125;</code></pre>
-
-<p>IP 地址相比 DNS 名称而言更为可靠，但也还是可以被欺骗的。攻击者可以轻易修改要发送的数据包的源 IP 地址，但是响应数据包会返回到修改后的 IP 地址。为了看到响应的数据包，攻击者需要在受害者机器与修改的 IP 地址之间截取网络数据流。为实现这个目的，攻击者通常会尝试把自己的机器和受害者的机器部署在同一子网内。攻击者可能会巧妙地采取源地址路由的方法来回避这一要求，但是在今天的互联网上通常会禁止源地址路由。总而言之，核实 IP 地址是一种有用的 authentication 方式，但不应仅使用这一种方法进行 authentication。</p>
-
-<p>解决方案：如果通过域名检查的方式可以确保主机接受和发送的 DNS 记录的一致性，您可以更加信任这一方式。攻击者如若不能控制目标域的域名服务器，就无法同时欺骗接受和发送的 DNS 记录。虽然这种方法并不简单，但是：攻击者也许可以说服域注册者把域移交给一个恶意的域名服务器。依赖于 DNS 记录的 authentication 是有风险的。<br />
-<br />
-虽然没有十分简单的 authentication 机制，但是还有比基于主机的 authentication 更好的方法。密码系统提供了比较不错的安全性，但是这种安全性却易受密码选择不当、不安全的密码传送和 password management 失误的影响。类似于 SSL 的方法值得考虑，但是通常这样的方法过于复杂，以至于使用时会有运行出错的风险，而关键资源也随时面临着被窃取的危险。在大多数情况下，包括一个物理标记的多重 authentication 可以在合理的代价范围内提供最大程度的安全保障。<br />
-<strong>Tips:</strong><br />
-1. 检查 DNS 信息的使用情况。除了考虑程序员的 authentication 机制能否起作用以外，还应该考虑在社会工程攻击中是如何利用 DNS 欺骗的。例如，如果攻击者可以使自己发出的数据包看上去像是来自内部机器的，他们是否可以通过验证程序获得信任呢？</p>
-
-<blockquote>
-<h2>13、Insecure Transport: Mail Transmission</h2>
-</blockquote>
-
-<p>问题描述：通过未加密网络发送的敏感数据容易被任何可拦截网络通信的攻击者读取/修改。</p>
-
-<p>解决方案：大多数现代邮件服务提供商提供了针对不同端口的加密备选方案，可使用 SSL/TLS 对通过网络发送的所有数据进行加密，或者将现有的未加密连接升级到 SSL/TLS。如果可能，请始终使用这些备选方案</p>
-
-<blockquote>
-<h2>14、SQL Injection（TEST类）</h2>
-</blockquote>
-
-<p>问题描述：SQL injection 错误在以下情况下发生：<br />
-1. 数据从一个不可信赖的数据源进入程序。<br />
-在这种情况下，数据经由SuiteTestBase.java&nbsp;的第&nbsp;334&nbsp;行进入executeQuery()。&nbsp;<br />
-2. 数据用于动态地构造一个 SQL 查询。&nbsp;<br />
-这种情况下，数据被传递给SuiteTestBase.java&nbsp;的第&nbsp;334&nbsp;行中的executeQuery()。<br />
-<br />
-<strong>例</strong><strong>&nbsp;1</strong><strong>：</strong>以下代码动态地构造并执行了一个 SQL 查询，该查询可以搜索与指定名称相匹配的项。该查询仅会显示条目所有者与被授予权限的当前用户一致的条目。&nbsp;</p>
-
-<pre>
+&#125;</code></pre><p>IP 地址相比 DNS 名称而言更为可靠，但也还是可以被欺骗的。攻击者可以轻易修改要发送的数据包的源 IP 地址，但是响应数据包会返回到修改后的 IP 地址。为了看到响应的数据包，攻击者需要在受害者机器与修改的 IP 地址之间截取网络数据流。为实现这个目的，攻击者通常会尝试把自己的机器和受害者的机器部署在同一子网内。攻击者可能会巧妙地采取源地址路由的方法来回避这一要求，但是在今天的互联网上通常会禁止源地址路由。总而言之，核实 IP 地址是一种有用的 authentication 方式，但不应仅使用这一种方法进行 authentication。</p><p>解决方案：如果通过域名检查的方式可以确保主机接受和发送的 DNS 记录的一致性，您可以更加信任这一方式。攻击者如若不能控制目标域的域名服务器，就无法同时欺骗接受和发送的 DNS 记录。虽然这种方法并不简单，但是：攻击者也许可以说服域注册者把域移交给一个恶意的域名服务器。依赖于 DNS 记录的 authentication 是有风险的。<br><br>虽然没有十分简单的 authentication 机制，但是还有比基于主机的 authentication 更好的方法。密码系统提供了比较不错的安全性，但是这种安全性却易受密码选择不当、不安全的密码传送和 password management 失误的影响。类似于 SSL 的方法值得考虑，但是通常这样的方法过于复杂，以至于使用时会有运行出错的风险，而关键资源也随时面临着被窃取的危险。在大多数情况下，包括一个物理标记的多重 authentication 可以在合理的代价范围内提供最大程度的安全保障。<br><strong>Tips:</strong><br>1. 检查 DNS 信息的使用情况。除了考虑程序员的 authentication 机制能否起作用以外，还应该考虑在社会工程攻击中是如何利用 DNS 欺骗的。例如，如果攻击者可以使自己发出的数据包看上去像是来自内部机器的，他们是否可以通过验证程序获得信任呢？</p><blockquote><h2>13、Insecure Transport: Mail Transmission</h2></blockquote><p>问题描述：通过未加密网络发送的敏感数据容易被任何可拦截网络通信的攻击者读取/修改。</p><p>解决方案：大多数现代邮件服务提供商提供了针对不同端口的加密备选方案，可使用 SSL/TLS 对通过网络发送的所有数据进行加密，或者将现有的未加密连接升级到 SSL/TLS。如果可能，请始终使用这些备选方案</p><blockquote><h2>14、SQL Injection（TEST类）</h2></blockquote><p>问题描述：SQL injection 错误在以下情况下发生：<br>1. 数据从一个不可信赖的数据源进入程序。<br>在这种情况下，数据经由SuiteTestBase.java&nbsp;的第&nbsp;334&nbsp;行进入executeQuery()。&nbsp;<br>2. 数据用于动态地构造一个 SQL 查询。&nbsp;<br>这种情况下，数据被传递给SuiteTestBase.java&nbsp;的第&nbsp;334&nbsp;行中的executeQuery()。<br><br><strong>例</strong><strong>&nbsp;1</strong><strong>：</strong>以下代码动态地构造并执行了一个 SQL 查询，该查询可以搜索与指定名称相匹配的项。该查询仅会显示条目所有者与被授予权限的当前用户一致的条目。&nbsp;</p><pre>
 <code>...
 String userName = ctx.getAuthenticatedUserName(); String itemName = request.getParameter("itemName"); String query = "SELECT * FROM items WHERE owner = '" 
 + userName + "' AND itemname = '" 
 + itemName + "'"; ResultSet rs = stmt.execute(query);
-...</code></pre>
-
-<p>这一代码所执行的查询遵循如下方式：</p>
-
-<pre>
+...</code></pre><p>这一代码所执行的查询遵循如下方式：</p><pre>
 <code>SELECT * FROM items
 WHERE owner = &lt;userName&gt;
-AND itemname = &lt;itemName&gt;;</code></pre>
-
-<p>但是，由于这个查询是动态构造的，由一个不变的基查询字符串和一个用户输入字符串连接而成，因此只有在&nbsp;itemName&nbsp;不包含单引号字符时，才会正确执行这一查询。如果一个用户名为&nbsp;wiley&nbsp;的攻击者为itemName&nbsp;输入字符串&ldquo;name&#39; OR &#39;a&#39;=&#39;a&rdquo;，那么构造的查询就会变成：</p>
-
-<pre>
+AND itemname = &lt;itemName&gt;;</code></pre><p>但是，由于这个查询是动态构造的，由一个不变的基查询字符串和一个用户输入字符串连接而成，因此只有在&nbsp;itemName&nbsp;不包含单引号字符时，才会正确执行这一查询。如果一个用户名为&nbsp;wiley&nbsp;的攻击者为itemName&nbsp;输入字符串&ldquo;name&#39; OR &#39;a&#39;=&#39;a&rdquo;，那么构造的查询就会变成：</p><pre>
 <code>SELECT * FROM items
 WHERE owner = 'wiley'
-AND itemname = 'name' OR 'a'='a';</code></pre>
-
-<p>附加条件&nbsp;OR &#39;a&#39;=&#39;a&#39;&nbsp;会使 where 从句永远评估为 true，因此该查询在逻辑上将等同于一个更为简化的查询：</p>
-
-<pre>
-<code>SELECT * FROM items;</code></pre>
-
-<p>这种查询的简化会使攻击者绕过查询只返回经过验证的用户所拥有的条目的要求；而现在的查询则会直接返回所有储存在&nbsp;items&nbsp;表中的条目，不论它们的所有者是谁。<br />
-<br />
-<strong>例</strong><strong>&nbsp;2</strong><strong>：</strong>这个例子指出了不同的恶意数值传递给在例 1 中构造和执行的查询时所带来的各种影响。如果一个用户名为&nbsp;wiley&nbsp;的攻击者为&nbsp;itemName输入字符串&ldquo;name&#39;; DELETE FROM items; --&rdquo;，那么构造成的查询语句将会变为两个：</p>
-
-<pre>
+AND itemname = 'name' OR 'a'='a';</code></pre><p>附加条件&nbsp;OR &#39;a&#39;=&#39;a&#39;&nbsp;会使 where 从句永远评估为 true，因此该查询在逻辑上将等同于一个更为简化的查询：</p><pre>
+<code>SELECT * FROM items;</code></pre><p>这种查询的简化会使攻击者绕过查询只返回经过验证的用户所拥有的条目的要求；而现在的查询则会直接返回所有储存在&nbsp;items&nbsp;表中的条目，不论它们的所有者是谁。<br><br><strong>例</strong><strong>&nbsp;2</strong><strong>：</strong>这个例子指出了不同的恶意数值传递给在例 1 中构造和执行的查询时所带来的各种影响。如果一个用户名为&nbsp;wiley&nbsp;的攻击者为&nbsp;itemName输入字符串&ldquo;name&#39;; DELETE FROM items; --&rdquo;，那么构造成的查询语句将会变为两个：</p><pre>
 <code>SELECT * FROM items 
 WHERE owner = 'wiley'
 AND itemname = 'name';
 
 DELETE FROM items;
 
---'</code></pre>
-
-<p>众多数据库服务器，其中包括 Microsoft(R) SQL Server 2000，都可以一次性执行多条用分号分隔的 SQL 指令。对于那些不允许运行用分号分隔的批量指令的数据库服务器，比如 Oracle 和其他数据库服务器，攻击者输入的这个字符串只会导致错误；但是在那些支持这种操作的数据库服务器上，攻击者可能会通过执行多条指令而在数据库上执行任意命令。&nbsp;<br />
-<br />
-注意成对的连字符 (--)；这在大多数数据库服务器上都表示下面的语句将作为注释使用，而不能加以执行 [4]。在这种情况下，注释字符的作用就是删除修改的查询指令中遗留的最后一个单引号。而在那些不允许这样加注注释的数据库中，通常攻击者可以如例 1 那样来攻击。如果攻击者输入字符串&ldquo;name&#39;); DELETE FROM items; SELECT * FROM items WHERE &#39;a&#39;=&#39;a&rdquo;就会创建如下三个有效指令：&nbsp;</p>
-
-<pre>
+--'</code></pre><p>众多数据库服务器，其中包括 Microsoft(R) SQL Server 2000，都可以一次性执行多条用分号分隔的 SQL 指令。对于那些不允许运行用分号分隔的批量指令的数据库服务器，比如 Oracle 和其他数据库服务器，攻击者输入的这个字符串只会导致错误；但是在那些支持这种操作的数据库服务器上，攻击者可能会通过执行多条指令而在数据库上执行任意命令。&nbsp;<br><br>注意成对的连字符 (--)；这在大多数数据库服务器上都表示下面的语句将作为注释使用，而不能加以执行 [4]。在这种情况下，注释字符的作用就是删除修改的查询指令中遗留的最后一个单引号。而在那些不允许这样加注注释的数据库中，通常攻击者可以如例 1 那样来攻击。如果攻击者输入字符串&ldquo;name&#39;); DELETE FROM items; SELECT * FROM items WHERE &#39;a&#39;=&#39;a&rdquo;就会创建如下三个有效指令：&nbsp;</p><pre>
 <code>SELECT * FROM items 
 WHERE owner = 'wiley'
 AND itemname = 'name';
 
 DELETE FROM items;
 
-SELECT * FROM items WHERE 'a'='a';</code></pre>
-
-<p>有些人认为在移动世界中，典型的 Web 应用程序漏洞（如 SQL injection）是无意义的 -- 为什么用户要攻击自己？但是，谨记移动平台的本质是从各种来源下载并在相同设备上运行的应用程序。恶意软件在银行应用程序附近运行的可能性很高，它们会强制扩展移动应用程序的攻击面（包括跨进程通信）。<br />
-<br />
-<strong>例</strong><strong>&nbsp;3</strong><strong>：</strong>以下代码将例 1 改编为适用于 Android 平台。</p>
-
-<pre>
+SELECT * FROM items WHERE 'a'='a';</code></pre><p>有些人认为在移动世界中，典型的 Web 应用程序漏洞（如 SQL injection）是无意义的 -- 为什么用户要攻击自己？但是，谨记移动平台的本质是从各种来源下载并在相同设备上运行的应用程序。恶意软件在银行应用程序附近运行的可能性很高，它们会强制扩展移动应用程序的攻击面（包括跨进程通信）。<br><br><strong>例</strong><strong>&nbsp;3</strong><strong>：</strong>以下代码将例 1 改编为适用于 Android 平台。</p><pre>
 <code>...
 PasswordAuthentication pa = authenticator.getPasswordAuthentication(); String userName = pa.getUserName(); String itemName = this.getIntent().getExtras().getString("itemName"); String query = "SELECT * FROM items WHERE owner = '"
 + userName + "' AND itemname = '" 
 + itemName + "'"; SQLiteDatabase db = this.openOrCreateDatabase("DB", MODE_PRIVATE, null); Cursor c = db.rawQuery(query, null);
-...</code></pre>
-
-<p>避免 SQL injection 攻击的传统方法之一是，把它作为一个输入合法性检查的问题来处理，只接受列在白名单中的字符，或者识别并避免那些列在黑名单中的恶意数据。白名单方法是一种非常有效方法，它可以强制执行严格的输入检查规则，但是参数化的 SQL 指令所需维护更少，而且能提供更好的安全保障。而对于通常采用的列黑名单方式，由于总是存在一些小漏洞，所以并不能有效地防止 SQL injection 威胁。例如，攻击者可以：<br />
-<br />
-&mdash; 把没有被黑名单引用的值作为目标<br />
-&mdash; 寻找方法以绕过对某一转义序列元字符的需要<br />
-&mdash;使用存储过程来隐藏注入的元字符<br />
-<br />
-手动去除 SQL 查询中的元字符有一定的帮助，但是并不能完全保护您的应用程序免受 SQL injection 攻击。<br />
-<br />
-防范 SQL injection 攻击的另外一种常用方式是使用存储过程。虽然存储过程可以阻止某些类型的 SQL injection 攻击，但是对于绝大多数攻击仍无能为力。存储过程有助于避免 SQL injection 的常用方式是限制可作为参数传入的指令类型。但是，有许多方法都可以绕过这一限制，许多危险的表达式仍可以传入存储过程。所以再次强调，存储过程在某些情况下可以避免这种攻击，但是并不能完全保护您的应用系统抵御 SQL injection 的攻击。</p>
-
-<p>解决方案：造成 SQL injection 攻击的根本原因在于攻击者可以改变 SQL 查询的上下文，使程序员原本要作为数据解析的数值，被篡改为命令了。当构造一个 SQL 查询时，程序员应当清楚，哪些输入的数据将会成为命令的一部分，而哪些仅仅是作为数据。参数化 SQL 指令可以防止直接窜改上下文，避免几乎所有的 SQL injection 攻击。参数化 SQL 指令是用常规的 SQL 字符串构造的，但是当需要加入用户输入的数据时，它们就需要使用捆绑参数，这些捆绑参数是一些占位符，用来存放随后插入的数据。换言之，捆绑参数可以使程序员清楚地分辨数据库中的数据，即其中有哪些输入可以看作命令的一部分，哪些输入可以看作数据。这样，当程序准备执行某个指令时，它可以详细地告知数据库，每一个捆绑参数所使用的运行时的值，而不会被解析成对该命令的修改。<br />
-<br />
-可以将例 1 改写成使用参数化 SQL 指令（替代用户输入连续的字符串），如下所示：</p>
-
-<pre>
+...</code></pre><p>避免 SQL injection 攻击的传统方法之一是，把它作为一个输入合法性检查的问题来处理，只接受列在白名单中的字符，或者识别并避免那些列在黑名单中的恶意数据。白名单方法是一种非常有效方法，它可以强制执行严格的输入检查规则，但是参数化的 SQL 指令所需维护更少，而且能提供更好的安全保障。而对于通常采用的列黑名单方式，由于总是存在一些小漏洞，所以并不能有效地防止 SQL injection 威胁。例如，攻击者可以：<br><br>&mdash; 把没有被黑名单引用的值作为目标<br>&mdash; 寻找方法以绕过对某一转义序列元字符的需要<br>&mdash;使用存储过程来隐藏注入的元字符<br><br>手动去除 SQL 查询中的元字符有一定的帮助，但是并不能完全保护您的应用程序免受 SQL injection 攻击。<br><br>防范 SQL injection 攻击的另外一种常用方式是使用存储过程。虽然存储过程可以阻止某些类型的 SQL injection 攻击，但是对于绝大多数攻击仍无能为力。存储过程有助于避免 SQL injection 的常用方式是限制可作为参数传入的指令类型。但是，有许多方法都可以绕过这一限制，许多危险的表达式仍可以传入存储过程。所以再次强调，存储过程在某些情况下可以避免这种攻击，但是并不能完全保护您的应用系统抵御 SQL injection 的攻击。</p><p>解决方案：造成 SQL injection 攻击的根本原因在于攻击者可以改变 SQL 查询的上下文，使程序员原本要作为数据解析的数值，被篡改为命令了。当构造一个 SQL 查询时，程序员应当清楚，哪些输入的数据将会成为命令的一部分，而哪些仅仅是作为数据。参数化 SQL 指令可以防止直接窜改上下文，避免几乎所有的 SQL injection 攻击。参数化 SQL 指令是用常规的 SQL 字符串构造的，但是当需要加入用户输入的数据时，它们就需要使用捆绑参数，这些捆绑参数是一些占位符，用来存放随后插入的数据。换言之，捆绑参数可以使程序员清楚地分辨数据库中的数据，即其中有哪些输入可以看作命令的一部分，哪些输入可以看作数据。这样，当程序准备执行某个指令时，它可以详细地告知数据库，每一个捆绑参数所使用的运行时的值，而不会被解析成对该命令的修改。<br><br>可以将例 1 改写成使用参数化 SQL 指令（替代用户输入连续的字符串），如下所示：</p><pre>
 <code>...
 String userName = ctx.getAuthenticatedUserName();
 String itemName = request.getParameter("itemName");
@@ -813,11 +205,7 @@ PreparedStatement stmt = conn.prepareStatement(query);
 stmt.setString(1, itemName);
 stmt.setString(2, userName);
 ResultSet results = stmt.execute();
-...</code></pre>
-
-<p>下面是 Android 的等同内容：</p>
-
-<pre>
+...</code></pre><p>下面是 Android 的等同内容：</p><pre>
 <code>...
 PasswordAuthentication pa = authenticator.getPasswordAuthentication();
 String userName = pa.getUserName();
@@ -825,319 +213,4 @@ String itemName = this.getIntent().getExtras().getString("itemName");
 String query = "SELECT * FROM items WHERE itemname=? AND owner=?";
 SQLiteDatabase db = this.openOrCreateDatabase("DB", MODE_PRIVATE, null);
 Cursor c = db.rawQuery(query, new Object[]&#123;itemName, userName&#125;);
-...</code></pre>
-
-<p>更加复杂的情况常常出现在报表生成代码中，因为这时需要通过用户输入来改变 SQL 指令的命令结构，比如在&nbsp;WHERE&nbsp;条件子句中加入动态的约束条件。不要因为这一需求，就无条件地接受连续的用户输入，从而创建查询语句字符串。当必须要根据用户输入来改变命令结构时，可以使用间接的方法来防止 SQL injection 攻击：创建一个合法的字符串集合，使其对应于可能要加入到 SQL 指令中的不同元素。在构造一个指令时，可使用来自用户的输入，以便从应用程序控制的值集合中进行选择。<br />
-<br />
-<strong>Tips:</strong><br />
-<br />
-1. 使用参数化 SQL 指令的一个常见错误是使用由用户控制的字符串来构造 SQL 指令。这显然背离了使用参数化 SQL 指令的初衷。如果不能确定用来构造参数化指令的字符串是否由应用程序控制，请不要因为它们不会直接作为 SQL 指令执行，就假定它们是安全的。务必彻底地检查 SQL 指令中使用的所有由用户控制的字符串，确保它们不会修改查询的含意。<br />
-<br />
-2. 许多现代 Web 框架都提供对用户输入执行验证的机制。其中包括 Struts 和 Spring MVC。为了突出显示未经验证的输入源，HPE Security Fortify 安全编码规则包会降低 HPE Security Fortify Static Code Analyzer（HPE Security Fortify 静态代码分析器）报告的问题被利用的可能性，并在使用框架验证机制时提供相应的依据，以动态重新调整问题优先级。我们将这种功能称之为上下文敏感排序。为了进一步帮助 HPE Security Fortify 用户执行审计过程，HPE Security Fortify 软件安全研究团队提供了数据验证项目模板，该模板会根据应用于输入源的验证机制，将问题分组到多个文件夹中。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://eyesmoons.github.io/2021/07/09/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="casey">
-      <meta itemprop="description" content="工作问题记录">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="毛毛小妖的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/07/09/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-07-09 18:09:43" itemprop="dateCreated datePublished" datetime="2021-07-09T18:09:43+08:00">2021-07-09</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>367</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">casey</p>
-  <div class="site-description" itemprop="description">工作问题记录</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">2</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">标签</span>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/eyesmoons" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;eyesmoons" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
-      </span>
-  </div>
-  <div class="cc-license motion-element" itemprop="license">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
-  </div>
-
-
-
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-  <div class="beian"><a href="http://www.beian.miit.gov.cn/" rel="noopener" target="_blank">京ICP备19002323号 </a>
-  </div>
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2021</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">casey</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-      <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">24k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">21 分钟</span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
-  </div>
-
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="总访客量">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
-    </span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="总访问量">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>
-</div>
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-  
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-</body>
-</html>
+...</code></pre><p>更加复杂的情况常常出现在报表生成代码中，因为这时需要通过用户输入来改变 SQL 指令的命令结构，比如在&nbsp;WHERE&nbsp;条件子句中加入动态的约束条件。不要因为这一需求，就无条件地接受连续的用户输入，从而创建查询语句字符串。当必须要根据用户输入来改变命令结构时，可以使用间接的方法来防止 SQL injection 攻击：创建一个合法的字符串集合，使其对应于可能要加入到 SQL 指令中的不同元素。在构造一个指令时，可使用来自用户的输入，以便从应用程序控制的值集合中进行选择。<br><br><strong>Tips:</strong><br><br>1. 使用参数化 SQL 指令的一个常见错误是使用由用户控制的字符串来构造 SQL 指令。这显然背离了使用参数化 SQL 指令的初衷。如果不能确定用来构造参数化指令的字符串是否由应用程序控制，请不要因为它们不会直接作为 SQL 指令执行，就假定它们是安全的。务必彻底地检查 SQL 指令中使用的所有由用户控制的字符串，确保它们不会修改查询的含意。<br><br>2. 许多现代 Web 框架都提供对用户输入执行验证的机制。其中包括 Struts 和 Spring MVC。为了突出显示未经验证的输入源，HPE Security Fortify 安全编码规则包会降低 HPE Security Fortify Static Code Analyzer（HPE Security Fortify 静态代码分析器）报告的问题被利用的可能性，并在使用框架验证机制时提供相应的依据，以动态重新调整问题优先级。我们将这种功能称之为上下文敏感排序。为了进一步帮助 HPE Security Fortify 用户执行审计过程，HPE Security Fortify 软件安全研究团队提供了数据验证项目模板，该模板会根据应用于输入源的验证机制，将问题分组到多个文件夹中。</p></div><footer class="post-footer"><div class="post-eof"></div></footer></article><article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://eyesmoons.github.io/2021/07/09/hello-world/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/avatar.gif"><meta itemprop="name" content="casey"><meta itemprop="description" content="工作问题记录"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="毛毛小妖的博客"></span><header class="post-header"><h2 class="post-title" itemprop="name headline"><a href="/2021/07/09/hello-world/" class="post-title-link" itemprop="url">Hello World</a></h2><div class="post-meta"><span class="post-meta-item"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建时间：2021-07-09 18:09:43" itemprop="dateCreated datePublished" datetime="2021-07-09T18:09:43+08:00">2021-07-09</time></span><br><span class="post-meta-item" title="本文字数"><span class="post-meta-item-icon"><i class="fa fa-file-word-o"></i> </span><span class="post-meta-item-text">本文字数：</span> <span>367</span> </span><span class="post-meta-item" title="阅读时长"><span class="post-meta-item-icon"><i class="fa fa-clock-o"></i> </span><span class="post-meta-item-text">阅读时长 &asymp;</span> <span>1 分钟</span></span></div></header><div class="post-body" itemprop="articleBody"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p></div><footer class="post-footer"><div class="post-eof"></div></footer></article></div><script>window.addEventListener("tabs:register",()=>{let{activeClass:t}=CONFIG.comments;if(CONFIG.comments.storage&&(t=localStorage.getItem("comments_active")||t),t){let e=document.querySelector(`a[href="#comment-${t}"]`);e&&e.click()}}),CONFIG.comments.storage&&window.addEventListener("tabs:click",t=>{if(!t.target.matches(".tabs-comment .tab-content .tab-pane"))return;let e=t.target.classList[1];localStorage.setItem("comments_active",e)})</script></div><div class="toggle sidebar-toggle"><span class="toggle-line toggle-line-first"></span> <span class="toggle-line toggle-line-middle"></span> <span class="toggle-line toggle-line-last"></span></div><aside class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc">文章目录</li><li class="sidebar-nav-overview">站点概览</li></ul><div class="post-toc-wrap sidebar-panel"></div><div class="site-overview-wrap sidebar-panel"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><p class="site-author-name" itemprop="name">casey</p><div class="site-description" itemprop="description">工作问题记录</div></div><div class="site-state-wrap motion-element"><nav class="site-state"><div class="site-state-item site-state-posts"><a href="/archives/"><span class="site-state-item-count">2</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-tags"><span class="site-state-item-count">1</span> <span class="site-state-item-name">标签</span></div></nav></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/eyesmoons" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;eyesmoons" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a></span></div><div class="cc-license motion-element" itemprop="license"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a></div></div></div></aside><div id="sidebar-dimmer"></div></div></main><footer class="footer"><div class="footer-inner"><div class="beian"><a href="http://www.beian.miit.gov.cn/" rel="noopener" target="_blank">京ICP备19002323号</a></div><div class="copyright">&copy; <span itemprop="copyrightYear">2021</span> <span class="with-love"><i class="fa fa-heart"></i> </span><span class="author" itemprop="copyrightHolder">casey</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-area-chart"></i> </span><span class="post-meta-item-text">站点总字数：</span> <span title="站点总字数">24k</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-coffee"></i> </span><span class="post-meta-item-text">站点阅读时长 &asymp;</span> <span title="站点阅读时长">21 分钟</span></div><div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动</div><div class="busuanzi-count"><script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="post-meta-item" id="busuanzi_container_site_uv" style="display:none"><span class="post-meta-item-icon"><i class="fa fa-user"></i> </span><span class="site-uv" title="总访客量"><span id="busuanzi_value_site_uv"></span> </span></span><span class="post-meta-divider">|</span> <span class="post-meta-item" id="busuanzi_container_site_pv" style="display:none"><span class="post-meta-item-icon"><i class="fa fa-eye"></i> </span><span class="site-pv" title="总访问量"><span id="busuanzi_value_site_pv"></span></span></span></div></div></footer></div><script src="/lib/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script><script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script><script src="/lib/velocity/velocity.min.js"></script><script src="/lib/velocity/velocity.ui.min.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/local-search.js"></script></body></html>
