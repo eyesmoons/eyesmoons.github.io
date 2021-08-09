@@ -54,6 +54,9 @@
 
 <h3 id="3-关于Broker"><a href="#3-关于Broker" class="headerlink" title="3.关于Broker"></a>3.关于Broker</h3><p>Broker 以插件的形式，独立于 Doris 部署。如果需要从第三方存储系统导入数据，需要部署相应的 Broker，默认提供了读取 HDFS 和百度云 BOS 的 fs_broker。fs_broker 是无状态的，建议每一个 FE 和 BE 节点都部署一个 Broker。可参考官网说明进行部署。</p>
 ]]></content>
+      <categories>
+        <category>大数据</category>
+      </categories>
       <tags>
         <tag>Deepin</tag>
         <tag>Doris</tag>
@@ -65,6 +68,9 @@
     <content><![CDATA[<p>没啥好说的，直接上代码</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.learning;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">bigDecimal</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        System.out.println(bigNumberSum(<span class="string">&quot;4267097523189999999999&quot;</span> ,<span class="string">&quot;9548125312989777665443&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 大整数相加，利用数组存储</span></span><br><span class="line"><span class="comment">     * 原理：利用竖式相加，对两个数进行反转，再按位相加，大于10进1，最终得到的结果再反转</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> num1</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> num2</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">bigNumberSum</span><span class="params">(String num1,String num2)</span></span>&#123;</span><br><span class="line">        <span class="comment">//反转第一个数</span></span><br><span class="line">        <span class="keyword">char</span>[] charsA = <span class="keyword">new</span> StringBuffer(num1).reverse().toString().toCharArray();</span><br><span class="line">        <span class="comment">//反转第二个数</span></span><br><span class="line">        <span class="keyword">char</span>[] charsB = <span class="keyword">new</span> StringBuffer(num2).reverse().toString().toCharArray();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//计算结果的长度为最长位数+1</span></span><br><span class="line">        <span class="keyword">int</span> maxLen = charsA.length &gt; charsB.length ? charsA.length+<span class="number">1</span> : charsB.length+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> result[] = <span class="keyword">new</span> <span class="keyword">int</span>[maxLen];</span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 算法核心</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i <span class="number">10</span>)&#123;</span><br><span class="line">                temp = temp-<span class="number">10</span>;</span><br><span class="line">                result[i+<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            result[i]=temp;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * 结果反转</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = result.length-<span class="number">1</span>;i &gt; <span class="number">0</span>;i--)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i==result.length-<span class="number">1</span> &amp;&amp; result[i] == <span class="number">0</span>)&#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            sb.append(result[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
       <tags>
         <tag>算法</tag>
       </tags>
@@ -678,8 +684,11 @@ Cursor c = db.rawQuery(query, new Object[]&#123;itemName, userName&#125;);
 <br />
 2. 许多现代 Web 框架都提供对用户输入执行验证的机制。其中包括 Struts 和 Spring MVC。为了突出显示未经验证的输入源，HPE Security Fortify 安全编码规则包会降低 HPE Security Fortify Static Code Analyzer（HPE Security Fortify 静态代码分析器）报告的问题被利用的可能性，并在使用框架验证机制时提供相应的依据，以动态重新调整问题优先级。我们将这种功能称之为上下文敏感排序。为了进一步帮助 HPE Security Fortify 用户执行审计过程，HPE Security Fortify 软件安全研究团队提供了数据验证项目模板，该模板会根据应用于输入源的验证机制，将问题分组到多个文件夹中。</p>
 ]]></content>
+      <categories>
+        <category>软件测试</category>
+      </categories>
       <tags>
-        <tag>代码扫描</tag>
+        <tag>Fortify</tag>
       </tags>
   </entry>
 </search>
